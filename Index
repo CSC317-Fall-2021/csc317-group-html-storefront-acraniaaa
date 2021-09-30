@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title><img src = "Header_Image.png"></img></title>
+<head>
+</head><br><br><br><br><br><br>
+
+<body>
+    <font face = "Maven Pro" size = "4"><table width = "100%" cellspacing = "4">
+        <tr>
+            <th width = "10%"><b>HOME
+            </b></th>
+            <th width = "10%"><b>PAPER
+            </b></th>
+            <th width = "10%"><b>ABOUT
+            </b></th>
+            <th width = "10%"><b>FAQ
+            </b></th>
+            <th width = "150%">
+                <form><center><b>
+            <input type = "text" name = "search" placeholder = "Search"
+            minlength = "1">
+                </b></center></form>
+            </th>
+        </tr>
+        <tr>
+            
+        </tr>
+    </table></font>
+    
+</body>
+</html>
