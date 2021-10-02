@@ -17,7 +17,7 @@
             </a></b></th>
             <th width = "150%">
                 <form><center><b>
-            <img src = "2055940.png"
+            <img src = "2055940.png">
             <input type = "text" name = "search" placeholder = "Search"
             minlength = "1">
                 </b></center></form>
