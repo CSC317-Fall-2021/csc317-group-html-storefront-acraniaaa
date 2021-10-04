@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html style="background-color:#111111;">
-<title>HOME</title>
+<html bgcolor ="bob">
+<center>
+<title>LOGIN</title>
 <head>
   <!--Header image. It is the with of the page: 1000px-->
   <img src = "Images/Header_Image.png" width="1000"></img>
+  <img src = "Header_Image.png" width ="1000"></img>
 </head>
 
 <!--Header links-->
 <nav margin-top: 0>
-    <font face = "Arial"><table width = "1000" CELLSPACING=0>
-        <tr style="background-color:#ffffff;" height="30">
+    <font face = "Arial"><table width = "1000" bgcolor = "#ffffff"
+	CELLSPACING=0> <tr height ="30">
             <th width = "10%"><a href = "index.html"><b>HOME
             </b></a></th>
             <th width = "10%"><a href = "products.html"><b>PAPER
@@ -23,11 +25,14 @@
             <th width = "30%"></th>
 
 
-            <th width = "50%" style="text-align: center;">
+            <th width = "50%">
                 <form><b>
             <img src = "Images/search_icon.png" width="15">
             <input type = "text" name = "search" placeholder = "Search"
             minlength = "1" height="15">
+            <img src = "2055940.png" width ="15">
+            <input type = "text" name = "search"
+		placeholder = "Search" minlength = "1" height ="15">
                 </b></form>
             </th>
         </tr>
@@ -36,72 +41,84 @@
 
 
       </nav>
+      <body bgcolor = "bob">
 
-      <body>
+      <font face = "Arial"><table width = "1000" CELLSPACING=0
+		bgcolor = "#ffffff">
+        <tr height ="30">
+          <th>
 
-      <font face = "Arial"><table width = "1000" CELLSPACING=0 style="background-color:#ffffff;">
-        <tr>
-          <th width="100%">
-                <!-- PUT YOUR CODE HERE -->
-                <h2>LOGIN</h2>
+
+            <font face = "Arial"><table width = "1000" CELLSPACING=0 style="background-color:#ffffff;">
+              <tr>
+                <th width="100%">
+                      <!-- PUT YOUR CODE HERE -->
+                      <h2>LOGIN</h2>
+                </th>
+              </tr>
+              <form>
+                <tr>
+                  <th>
+                  <input type = "text" name = "user" placeholder = "Username" style="width: 180px; height: 30px;">
+                  <br>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <br>
+                    <input type = "password" name = "pass" placeholder = "Password" style="width: 180px; height: 30px;">
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <input type="checkbox" id="Remember" name="Remember" value="RememberMe">
+                    <label for="Remember"><font size="-1">Remember Me</font></label><br>
+                  </th>
+                <tr>
+
+                <tr>
+                  <th>
+                    <br>
+                    <input type="submit" value="SUBMIT" style="width: 155px; height: 30px; background-color:#036ba8; color:#ffffff;" >
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <br>
+                    <font size="-1">Don't have an account?</font><br>
+                    <a href="register.html"><font size="-1">REGISTER</font></a>
+                  </th>
+                </tr>
+
+
+                <tr height="300px">
+                  <th>
+                  </th>
+                </tr>
+
+              </form>
+            </table></font>
+
+
+
           </th>
         </tr>
-        <form>
-          <tr>
-            <th>
-            <input type = "text" name = "user" placeholder = "Username" style="width: 180px; height: 30px;">
-            <br>
-            </th>
-          </tr>
-
-          <tr>
-            <th>
-              <br>
-              <input type = "password" name = "pass" placeholder = "Password" style="width: 180px; height: 30px;">
-            </th>
-          </tr>
-
-          <tr>
-            <th>
-              <input type="checkbox" id="Remember" name="Remember" value="RememberMe">
-              <label for="Remember"><font size="-1">Remember Me</font></label><br>
-            </th>
-          <tr>
-
-          <tr>
-            <th>
-              <br>
-              <input type="submit" value="SUBMIT" style="width: 155px; height: 30px; background-color:#036ba8; color:#ffffff;" >
-            </th>
-          </tr>
-
-          <tr>
-            <th>
-              <br>
-              <font size="-1">Don't have an account?</font><br>
-              <a href="register.html"><font size="-1">LOGIN</font></a>
-            </th>
-          </tr>
-
-
-          <tr height="300px">
-            <th>
-            </th>
-          </tr>
-
-        </form>
       </table></font>
 
       </body>
 
       <footer>
 
-      <table width="1000px" height="500px" style="background-color:#036ba8;">
+      <table width ="1000px" height = "750px" height ="500px"
+	bgcolor = "#036ba8">
         <tr>
-          <th>
+          <th> <!-- BLUE SECTION CODE HERE IF NEEDED-->
           </th>
         </tr>
       </table>
       </footer>
-
+</center>
 </html>
