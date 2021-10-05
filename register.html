@@ -4,7 +4,21 @@
 <title>REGISTER</title>
 <head>
   <!--Header image. It is the with of the page: 1000px-->
-  <img src = "Header_Image.png" width ="1000"></img>
+  <table width = "1000">
+    <tr>
+      <td></td>
+	<td rowspan = 2><img src = "Images/Header_Image.png" width ="1000">
+	</img></td>
+    </tr>
+    <tr>
+	<b><td colspan = "2" valign = "top" align = "right">
+	<font size = "4"><a href = "login.html">
+	LOG IN |</a><a href = "cart.html"><img width = "20"
+	height = "20" src = "Images/cart_icon.png"></a>
+	<!--Code for the Login section in the top right -->
+	</font></b></td>
+    </tr>
+  </table>
 </head>
 
 <!--Header links-->
@@ -26,7 +40,7 @@
 
             <th width = "50%">
                 <form><b>
-            <img src = "2055940.png" width ="15">
+            <img src = "Images/search_icon.png" width ="15">
             <input type = "text" name = "search"
 		placeholder = "Search" minlength = "1" height ="15">
                 </b></form>
@@ -45,73 +59,87 @@
           <th>
 
 
-            <font face = "Arial"><table width = "1000" CELLSPACING=0 style="background-color:#ffffff;">
-              <tr>
-                <th width="100%">
-                      <!-- PUT YOUR CODE HERE -->
-                      <h2>REGISTER</h2>
+
+            <font face = "Arial"><table width = "1000" CELLSPACING=0
+            bgcolor = "#ffffff">
+              <tr height ="30">
+                <th>
+
+
+                  <font face = "Arial"><table width = "1000" CELLSPACING=0 style="background-color:#ffffff;">
+                    <tr>
+                      <th width="100%">
+                            <!-- PUT YOUR CODE HERE -->
+                            <h2>REGISTER</h2>
+                      </th>
+                    </tr>
+                    <form>
+                      <tr>
+                        <th>
+                        <input type = "text" name = "user" placeholder = "Username" style="width: 180px; height: 30px;">
+                        <br>
+                        </th>
+                      </tr>
+
+                      <tr>
+                        <th>
+                          <br>
+                          <input type = "password" name = "email" placeholder = "Email" style="width: 180px; height: 30px;">
+                        </th>
+                      </tr>
+
+                      <tr>
+                        <th>
+                          <br>
+                          <input type = "password" name = "pass" placeholder = "Password" style="width: 180px; height: 30px;">
+                        </th>
+                      </tr>
+
+                      <tr>
+                        <th>
+                          <br>
+                          <input type = "password" name = "passconfirm" placeholder = "Confirm Password" style="width: 180px; height: 30px;">
+                        </th>
+                      </tr>
+
+                      <tr>
+                        <th>
+                          <input type="checkbox" id="Agree" name="Agree" value="Agree">
+                          <label for="Agree"><font size="-1"> By creating an account, you must agree to Dunder Mifflin's<br>
+                            <a>TERMS OF SERVICE</a></font></label><br>
+                        </th>
+                      <tr>
+
+                      <tr>
+                        <th>
+                          <br>
+                          <input type="submit" value="REGISTER" style="width: 180px; height: 30px; background-color:#036ba8; color:#ffffff;">
+                        </th>
+                      </tr>
+
+                      <tr>
+                        <th>
+                          <br><font size="-1">
+                          Already have an account?<br>
+                          <a href="login.html">LOGIN</a>
+                        </font>
+                        </th>
+                      </tr>
+
+                      <tr height="300px">
+                        <th>
+                        </th>
+                      </tr>
+
+                    </form>
+                  </table></font>
+
+
+
                 </th>
               </tr>
-              <form>
-                <tr>
-                  <th>
-                  <input type = "text" name = "user" placeholder = "Username" style="width: 180px; height: 30px;">
-                  <br>
-                  </th>
-                </tr>
-
-                <tr>
-                  <th>
-                    <br>
-                    <input type = "password" name = "email" placeholder = "Email" style="width: 180px; height: 30px;">
-                  </th>
-                </tr>
-
-                <tr>
-                  <th>
-                    <br>
-                    <input type = "password" name = "pass" placeholder = "Password" style="width: 180px; height: 30px;">
-                  </th>
-                </tr>
-
-                <tr>
-                  <th>
-                    <br>
-                    <input type = "password" name = "passconfirm" placeholder = "Confirm Password" style="width: 180px; height: 30px;">
-                  </th>
-                </tr>
-
-                <tr>
-                  <th>
-                    <input type="checkbox" id="Agree" name="Agree" value="Agree">
-                    <label for="Agree"><font size="-1"> By creating an account, you must agree to Dunder Mifflin's<br>
-                      <a>TERMS OF SERVICE</a></font></label><br>
-                  </th>
-                <tr>
-
-                <tr>
-                  <th>
-                    <br>
-                    <input type="submit" value="REGISTER" style="width: 180px; height: 30px; background-color:#036ba8; color:#ffffff;">
-                  </th>
-                </tr>
-
-                <tr>
-                  <th>
-                    <br><font size="-1">
-                    Already have an account?<br>
-                    <a href="login.html">LOGIN</a>
-                  </font>
-                  </th>
-                </tr>
-
-                <tr height="300px">
-                  <th>
-                  </th>
-                </tr>
-
-              </form>
             </table></font>
+
 
 
 
@@ -126,7 +154,7 @@
       <table width ="1000px" height = "750px" height ="500px"
 	bgcolor = "#036ba8">
         <tr>
-          <th> <!-- BLUE SECTION CODE HERE IF NEEDED-->
+          <th>  <!-- Code -->
           </th>
         </tr>
       </table>
