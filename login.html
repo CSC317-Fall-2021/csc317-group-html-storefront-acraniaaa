@@ -1,96 +1,72 @@
 <!DOCTYPE html>
-<html bgcolor ="bob">
-<center>
-<title>Dunder Mifflin - Login</title>
+<html>
 <head>
+<title>Dunder Mifflin</title>
 
-  <!--Header image. It is the with of the page: 1000px-->
-  <table width = "1000">
-    <tr>
-      <td></td>
-	<td rowspan = 2><img src = "Images/Header_Image.png" width ="1000">
-	</img></td>
-    </tr>
-    <tr>
-	<body link = "#00253B" alink = "#00253B" vlink = "#00253B">
-	<td colspan = "2" valign = "top" align = "right">
-	<font size = "4"><a href = "login.html">
-	LOG IN |</a><a href = "cart.html"><img width = "20"
-	height = "20" src = "Images/cart_icon.png"></a>
-	<!--Code for the Login section in the top right -->
-	</font></body></td>
-    </tr>
-  </table>
+<link href = "StyleSheet.css" rel = "stylesheet">
+
 </head>
 
-<!--Header links-->
-<nav margin-top: 0>
-    <font face = "Arial"><table width = "1000" bgcolor = "#ffffff"
-	CELLSPACING=0> <tr height ="30">
-            <th width = "10%"><a href = "index.html"><b>HOME
-            </b></a></th>
-            <th width = "10%"><a href = "products.html"><b>PAPER
-            </b></a></th>
-            <th width = "10%"><a href = "about.html"><b>ABOUT
-            </b></a></th>
-            <th width = "10%"><a href = "FAQ.html"><b>FAQ
-            </b></a></th>
+<body>
+<header class = "header">
+   <nav class = "nav">
+    	<ul class = "navUl">
+	   <li class = "logo"><a href="index.html"><img
+		src="Images/Dunder_Mifflin_logo.png" width="100"
+		height="40"></a>
+	   </li>
+	   <li class = "navLi"><a href="index.html"> HOME</a></li>
+	   <li class = "navLi"><a href="products.html"> PAPER</a></li>
+	   <li class = "navLi"><a href="about.html"> ABOUT</a></li>
+	   <li class = "navLi"><a href="FAQ.html"> FAQ</a></li>
 
-            <!---Spacer to put the search bar in a good spot--->
-            <th width = "30%"></th>
+   	</ul>
+   </nav>
+</header>
+
+<img src="Images/Header_Image.png" width="100%">
+
+<p>
+  <font face = "Arial"><body><center>
+    <br><br><br><br>
+    <table cellspacing="0" cellpadding="0" style="text-align:center;background-color:white;border-color:black;border-style:solid;border-width:1;box-shadow: 5px 10px;">
+    <tr>
+      <td width="300px" height="400px" >
+
+        <h1>LOGIN</h1>
+  <div class="container">
+      <form>
+        <input type="text" name="username" placeholder="Username" required style="width: 80%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
+        <input type="password" name="password" placeholder="Password" required style="width: 80%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
+        <input type="submit" value="LOGIN" style="background-color: #036ba8;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 80%;">
+      </form>
+  </div>
+        <br>Don't have an account?
+        <br><a href="register.html">REGISTER</a>
+
+      </td>
+      <td width="400px" height="400px" style="border-left: 5px solid black;">
+
+        <img align="center" width="100%" height="100%" src="Images/LoginImage.png" alt="DMPaper"/>
+
+      </td>
+    </tr>
+
+  </table>
+  </center></body></font>
+</p>
+</body>
 
 
-            <th width = "50%">
-                <form><b>
-            <img src = "Images/search_icon.png" width ="15">
-            <input type = "text" name = "search"
-		placeholder = "Search" minlength = "1" height ="15">
-                </b></form>
-            </th>
-        </tr>
-
-      </table></font>
+<br></br>
 
 
-      </nav>
+<footer class="footer">
 
-      <font face = "Arial"><body>
-        <br><br><br><br>
-        <table cellspacing="0" cellpadding="0" style="text-align:center;background-color:white;border-color:black;border-style:solid;border-width:1;box-shadow: 5px 10px;">
-        <tr>
-          <td width="300px" height="400px" >
+</footer>
 
-            <h1>LOGIN</h1>
-      <div class="container">
-          <form>
-            <input type="text" name="username" placeholder="Username" required style="width: 80%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
-            <input type="password" name="password" placeholder="Password" required style="width: 80%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
-            <input type="submit" value="LOGIN" style="background-color: #036ba8;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 80%;">
-          </form>
-      </div>
-            <br>Don't have an account?
-            <br><a href="register.html">REGISTER</a>
 
-          </td>
-          <td width="400px" height="400px" style="border-left: 5px solid black;">
 
-            <img align="center" width="100%" height="100%" src="Images/LoginImage.png" alt="DMPaper"/>
 
-          </td>
-        </tr>
 
-      </table>
-    </body></font>
-
-      <footer>
-
-      <table width ="1000px" height = "750px" height ="500px"
-	bgcolor = "#036ba8">
-        <tr>
-          <th>  <!-- Code -->
-          </th>
-        </tr>
-      </table>
-      </footer>
-</center>
 </html>
