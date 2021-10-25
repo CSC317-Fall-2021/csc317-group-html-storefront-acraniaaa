@@ -3,27 +3,11 @@
   <center>
   <title>Dunder Mifflin - Products</title>
   <head>
-    <!--Header image. It is the with of the page: 1000px-->
-    <table width = "1000">
-      <tr>
-        <td></td>
-    <td rowspan = 2><img src = "Images/Header_Image.png" width ="1000">
-    </img></td>
-      </tr>
-      <tr>
-    <body link = "#00253B" alink = "#00253B" vlink = "#00253B">
-    <td colspan = "2" valign = "top" align = "right">
-    <font size = "4"><a href = "login.html">
-    LOG IN |</a><a href = "cart.html"><img width = "20"
-    height = "20" src = "Images/cart_icon.png"></a>
-    <!--Code for the Login section in the top right -->
-    </font></body></td>
-      </tr>
-    </table>
+    <link href = "StyleSheet.css" rel = "stylesheet">
     <!--The style of the page goes here-->
     <style>
       h1 {
-      color:blue;
+      color:white;
       }
       .product-selection {
         background-color: lightgray;
@@ -54,6 +38,7 @@
       }
       
       .grid-product {
+        border: 1px ridge rgba(0, 0, 0, 0.05);
         background-color: ghostwhite;
         margin: 12px;
         display: grid;
@@ -63,40 +48,24 @@
     </style>
   </head>
 
-
   <!--Navigation links-->
-  <nav margin-top: 0>
-    <font face = "Arial">
-      <table width="1000" bgcolor = "#ffffff"
-    CELLSPACING=0> <tr height ="30">
-              <th width = "10%"><a href = "index.html"><b>HOME
-              </b></a></th>
-              <th width = "10%"><a href = "products.html"><b>PAPER
-              </b></a></th>
-              <th width = "10%"><a href = "about.html"><b>ABOUT
-              </b></a></th>
-              <th width = "10%"><a href = "FAQ.html"><b>FAQ
-              </b></a></th>
-
-              <!---Spacer to put the search bar in a good spot--->
-              <th width = "30%"></th>
-
-
-              <th width = "50%">
-                  <form><b>
-              <img src = "Images/search_icon.png" width ="15">
-              <input type = "text" name = "search"
-      placeholder = "Search" minlength = "1" height ="15">
-                  </b></form>
-              </th>
-          </tr>
-
-      </table>
-    </font>
-  </nav>
-
   <body>
-      <font face = "Times New Roman">
+    <header class = "header">
+      <nav class = "nav">
+         <ul class = "navUl">
+        <li class = "logo"><a href="index.html"><img 
+       src="Images/Dunder_Mifflin_logo.png" width="100" 
+       height="40"></a>
+        </li>
+        <li class = "navLi"><a href="index.html"> HOME</a></li>
+        <li class = "navLi"><a href="products.html"> PAPER</a></li>
+        <li class = "navLi"><a href="about.html"> ABOUT</a></li>
+        <li class = "navLi"><a href="FAQ.html"> FAQ</a></li>
+   
+        </ul>
+      </nav>
+   </header>
+      <font face = "Arial">
         <table>
           <tr height="30">
             <th colspan="3">

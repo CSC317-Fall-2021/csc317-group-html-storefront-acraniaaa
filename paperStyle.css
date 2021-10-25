@@ -1,0 +1,107 @@
+.grid-container {
+    display: grid;
+    background-color: white;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-rows: [r0] 100px [r1] 400px [r2] 50px [r3] 500px [r4] ;
+    grid-template-columns: [c0] 35% [c1] 500px [c2] auto [c3]; 
+    
+  }
+  #product-image {
+    border-radius: 10px;
+    margin: 10px;
+    grid-row-start: r1;
+    grid-row-end: r2;
+    grid-column-start: c0;
+    grid-column-end: c1;
+    border: 1px ridge rgba(0, 0, 0, 0.05);
+  }
+  #product-name {
+    grid-row-start: r0;
+    grid-row-end: r1;
+    grid-column-start: c0;
+    grid-column-end: c1;
+    font-size: 20px
+  }
+  #product-desc {
+    grid-row-start: r1;
+    grid-row-end: r2;
+    grid-column-start: c1;
+    grid-column-end: c2;
+  }
+  #paragraph-title {
+    font-size: 20px;
+    border-bottom: 3px solid #bbb; 
+  }
+  #product-desc-list {
+    list-style-type: circle;
+  }
+  .product-buy {
+  
+    margin-left: 100px;
+    font-size: 30px;
+    grid-row-start: r1;
+    grid-row-end: r2;
+    grid-column-start: c2;
+    grid-column-end: c3;
+  }
+  #product-button-buy {
+    background-color: #036ba8;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 16px 48px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #product-button-buy:hover {
+    grid-row-start: r1;
+    grid-row-end: r2;
+    grid-column-start: c2;
+    grid-column-end: -1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 1;
+  }
+  #similar-products-title {
+    font-size: 20px;
+    margin: 50px;
+    grid-row-start: r2;
+    grid-row-end: r3;
+    grid-column-start: c1;
+    grid-column-end: c2;
+  }
+  .similar-products {
+    margin-top: 10px;
+    grid-row-start: r3;
+    grid-row-end: r4;
+    grid-column-start: c0;
+    grid-column-end: c3;
+    border-top: 3px solid #bbb; 
+  }
+  #product-one {
+    margin: 30px 50px;
+    grid-row-start: r3;
+    grid-row-end: r4;
+    grid-column-start: c0;
+    grid-column-end: c1;
+  }
+  #product-two {
+    margin: 30px 50px;
+    grid-row-start: r3;
+    grid-row-end: r4;
+    grid-column-start: c1;
+    grid-column-end: c2;
+  }
+  #product-three {
+    margin: 30px 50px;
+    grid-row-start: r3;
+    grid-row-end: -1;
+    grid-column-start: c2;
+    grid-column-end: c3;
+  }
