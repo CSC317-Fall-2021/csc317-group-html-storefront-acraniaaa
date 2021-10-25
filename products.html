@@ -1,132 +1,175 @@
 <!DOCTYPE html>
-<html bgcolor ="bob">
-<center>
-<title>Dunder Mifflin - Products</title>
-<head>
-  <!--Header image. It is the with of the page: 1000px-->
-  <table width = "1000">
-    <tr>
-      <td></td>
-	<td rowspan = 2><img src = "Images/Header_Image.png" width ="1000">
-	</img></td>
-    </tr>
-    <tr>
-	<body link = "#00253B" alink = "#00253B" vlink = "#00253B">
-	<td colspan = "2" valign = "top" align = "right">
-	<font size = "4"><a href = "login.html">
-	LOG IN |</a><a href = "cart.html"><img width = "20"
-	height = "20" src = "Images/cart_icon.png"></a>
-	<!--Code for the Login section in the top right -->
-	</font></body></td>
-    </tr>
-  </table>
-</head>
+<html>
+  <center>
+  <title>Dunder Mifflin - Products</title>
+  <head>
+    <!--Header image. It is the with of the page: 1000px-->
+    <table width = "1000">
+      <tr>
+        <td></td>
+    <td rowspan = 2><img src = "Images/Header_Image.png" width ="1000">
+    </img></td>
+      </tr>
+      <tr>
+    <body link = "#00253B" alink = "#00253B" vlink = "#00253B">
+    <td colspan = "2" valign = "top" align = "right">
+    <font size = "4"><a href = "login.html">
+    LOG IN |</a><a href = "cart.html"><img width = "20"
+    height = "20" src = "Images/cart_icon.png"></a>
+    <!--Code for the Login section in the top right -->
+    </font></body></td>
+      </tr>
+    </table>
+    <!--The style of the page goes here-->
+    <style>
+      h1 {
+      color:blue;
+      }
+      .product-selection {
+        background-color: lightgray;
+        grid-row-start: 1;
+        grid-row-end: -1;
+        grid-column-start: col0;
+        grid-column-end: col1;
+      }
+      .product-image {
+        grid-row-start: r0;
+        grid-row-end: r1;
 
-<!--Header links-->
-<nav margin-top: 0>
-    <font face = "Arial"><table width = "1000" bgcolor = "#ffffff"
-	CELLSPACING=0> <tr height ="30">
-            <th width = "10%"><a href = "index.html"><b>HOME
-            </b></a></th>
-            <th width = "10%"><a href = "products.html"><b>PAPER
-            </b></a></th>
-            <th width = "10%"><a href = "about.html"><b>ABOUT
-            </b></a></th>
-            <th width = "10%"><a href = "FAQ.html"><b>FAQ
-            </b></a></th>
+      }
+      
+      .product-desc {
+        margin:20px;
+        background-color: whitesmoke;
+        grid-row-start: r1;
+        grid-row-end: auto;
 
-            <!---Spacer to put the search bar in a good spot--->
-            <th width = "30%"></th>
+      }
+      .grid-container {
+        display: grid;
+        row-gap: 20px;
+        column-gap: 10px;
+        grid-template-rows: [row0] 500px [row1] 500px;
+        grid-template-columns: [col0] 20% [col1] auto [col2] auto [col3] auto;
+      }
+      
+      .grid-product {
+        background-color: ghostwhite;
+        margin: 12px;
+        display: grid;
+        grid-template-rows: [r0] 200px [r1] auto;
+        grid-template-columns: [c0] auto;
+      }
+    </style>
+  </head>
 
 
-            <th width = "50%">
-                <form><b>
-            <img src = "Images/search_icon.png" width ="15">
-            <input type = "text" name = "search"
-		placeholder = "Search" minlength = "1" height ="15">
-                </b></form>
-            </th>
-        </tr>
+  <!--Navigation links-->
+  <nav margin-top: 0>
+    <font face = "Arial">
+      <table width="1000" bgcolor = "#ffffff"
+    CELLSPACING=0> <tr height ="30">
+              <th width = "10%"><a href = "index.html"><b>HOME
+              </b></a></th>
+              <th width = "10%"><a href = "products.html"><b>PAPER
+              </b></a></th>
+              <th width = "10%"><a href = "about.html"><b>ABOUT
+              </b></a></th>
+              <th width = "10%"><a href = "FAQ.html"><b>FAQ
+              </b></a></th>
 
-      </table></font>
+              <!---Spacer to put the search bar in a good spot--->
+              <th width = "30%"></th>
 
 
-      </nav>
-      <body bgcolor = "bob">
-      <table>
-      <font face = "Arial"><table width = "1000" CELLSPACING=0
-		bgcolor = "#ffffff">
-        <tr height="30">
-          <th colspan="3">
-                <!-- PUT YOUR CODE HERE -->
-               <center><h1 style="color:red;">Products</h1></center>
-          </th>
-        </tr>
-	<tr>
-	  <td>
-	   <center>
-	      <fieldset>
-	      <a href = "paperWhite.html"><img width = "150" height = "150" src = "Images/PaperCASE.png"></a>
-	      <br>Copy Paper: 8.5<q>x11</q> 20lb. White<br>$39.99
-	      </fieldset>
-	   </center>
-       	  </td>
-	  <td>
-	   <center>
-	      <fieldset>
-	      <a href = "paperRed.html"><img width = "150" height = "150" src = "Images/PaperCASE.png"></a>
-	      <br>Copy Paper: 8.5<q>x11</q> 20lb. Red<br>$49.99
-	      </fieldset>
-	   </center>
-	  </td>
-	  <td>
-	    <center>
-	      <fieldset>
-              <a href = "paperBlue.html"><img width = "150" height = "150" src = "Images/PaperCASE.png"></a>
-              <br>Copy Paper: 8.5<q>x11</q> 20lb. Blue<br>$49.99
-	      </fieldset>
-	    </center>
-	  </td>
-	</tr>
-        <tr>
-          <td>
-           <center>
-	      <fieldset>
-              <a href = "paperRainbow.html"><img width = "150" height = "150" src = "Images/PaperCASE.png"></a>
-              <br>Copy Paper: 8.5<q>x11</q> 20lb. Rainbow<br>$59.99
-	      </fieldset>
-           </center>
-          </td>
-          <td>
-            <center>
-	      <fieldset>
-              <a href = "paperBlack.html"><img width = "150" height = "150" src = "Images/PaperCASE.png"></a>
-              <br>Copy Paper: 8.5<q>x11</q> 20lb. Black<br>$49.99
-	      </fieldset>
-            </center>
-          </td>
-          <td>
-            <center>
-	      <fieldset>
-              <a href = "paperOrange.html"><img width = "150" height = "150" src = "Images/PaperCASE.png"></a>
-              <br>Copy Paper: 8.5<q>x11</q> 20lb. Orange<br>$49.99
-	      </fieldset>
-            </center>
-          </td>
-        </tr>
-      </table></font>
+              <th width = "50%">
+                  <form><b>
+              <img src = "Images/search_icon.png" width ="15">
+              <input type = "text" name = "search"
+      placeholder = "Search" minlength = "1" height ="15">
+                  </b></form>
+              </th>
+          </tr>
 
-      </body>
-
-      <footer>
-
-      <table width ="1000px" height = "750px" height ="500px"
-	bgcolor = "#036ba8">
-        <tr>
-          <th>  <!-- Code -->
-          </th>
-        </tr>
       </table>
-      </footer>
-</center>
+    </font>
+  </nav>
+
+  <body>
+      <font face = "Times New Roman">
+        <table>
+          <tr height="30">
+            <th colspan="3">
+              <center><h1>Products</h1></center>
+            </th>
+          </tr>
+        </table>
+        <div class="grid-container">
+          <div class = "product-selection">
+              <h4>Test<br>Another Test</h4>
+          </div>
+          <div class = "grid-product">
+            <div class = "product-image">
+              <a href = "paperOrange.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br>Product Description 1
+            </div>
+          </div>
+          <div class = "grid-product">
+            <div class = "product-image">
+              <a href = "paperBlack.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br> Product Description 2
+            </div>
+          </div>
+          <div class = "grid-product">
+            <div class = "product-image"> 
+              <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br> Product Description 3
+            </div>
+          </div>
+          <div class = "grid-product">
+            <div class = "product-image">
+              <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br> Product Description 4
+            </div>
+          </div>
+          <div class = "grid-product">
+            <div class = "product-image">
+              <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br> Product Description 5
+            </div>
+          </div>
+          <div class = "grid-product">
+            <div class = "product-image">
+              <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br> Product Description 6
+            </div>
+          </div>
+        </div>
+      </font>
+
+  </body>
+
+  <footer>
+
+    <table width ="1000px" height = "750px" height ="500px"
+    bgcolor = "#036ba8">
+      <tr>
+        <th>  <!-- Code -->
+        </th>
+      </tr>
+    </table>
+  </footer>
+  </center>
 </html>

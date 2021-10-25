@@ -1,111 +1,113 @@
 <!DOCTYPE html>
-<html bgcolor ="bob">
-<center>
-<title>Dunder Mifflin - Home</title>
+<html>
 <head>
-  <!--Header image. It is the with of the page: 1000px-->
-  <table width = "1000">
-    <tr>
-      <td></td>	
-	<td rowspan = 2><img src = "Images/Header_Image.png" width ="1000">
-	</img></td>
-    </tr>
-    <tr>
-	<body link = "#00253B" alink = "#00253B" vlink = "#00253B">
-	<td colspan = "2" valign = "top" align = "right">
-	<font size = "4"><a href = "login.html"><b>
-	LOG IN |</b></a><a href = "cart.html"><img width = "20" 
-	height = "20" src = "Images/cart_icon.png"></a>
-	<!--Code for the Login section in the top left -->
-	</font></body></td>
-    </tr>
-  </table>
+<title>Dunder Mifflin</title>
+<style>
+
+body {
+    margin:0;
+    padding:0;
+    background:#1F618D;
+}
+
+nav {
+    width:100%;
+    background:black;
+    overflow:auto;
+}
+
+ul {
+    padding:0;
+    margin: 0 0 0 150px;
+    list-style:none;
+}
+
+li {
+    float:left;
+}
+.logo img{
+
+   position:absolute;
+   margin-top:15px;
+   margin-left:10px;
+}
+
+.cart img{
+   position:absolute;
+   margin-top:15px;
+   margin-left:1250px;
+}
+
+
+nav a{
+   width:200px;
+   display:block;
+   padding:30px 15px;
+   text-decoration:none;
+   font-family:Arial;
+   color:white;
+   text-align:center;
+}
+
+nav a:hover {
+    background:#1F618D;
+    transition: 0.5s;
+    text-transform:uppercase;
+}
+
+</style>
 </head>
 
-<!--Header links-->
-<nav margin-top: 0>
-    <font face = "Arial"><table width = "1000" bgcolor = "#ffffff" 
-	CELLSPACING=0> <tr height ="30">
-            <th width = "10%"><a href = "index.html"><b>HOME
-            </b></a></th>
-            <th width = "10%"><a href = "products.html"><b>PAPER
-            </b></a></th>
-            <th width = "10%"><a href = "about.html"><b>ABOUT
-            </b></a></th>
-            <th width = "10%"><a href = "FAQ.html"><b>FAQ
-            </b></a></th>
-
-            <!---Spacer to put the search bar in a good spot--->
-            <th width = "30%"></th>
-
-
-            <th width = "50%">
-                <form><b>
-            <img src = "Images/search_icon.png" width ="15">
-            <input type = "text" name = "search" 
-		placeholder = "Search" minlength = "1" height ="15">
-                </b></form>
-            </th>
-        </tr>
-
-      </table></font>
-
-
-      </nav>
-      <body bgcolor = "bob"><font face = "Arial" color = "black">
-	<table width = "1000" CELLSPACING= 0 bgcolor = "#ffffff">
-	    <tr height ="30">
-		<th width = "50%">
-		<a href = "products.html"><img width = "400" 
-		height = "400" src = "Images/PaperCASE.png"></a></th>
-		<font size = "6"><th width = "50%">Only<br>$</font>
-		<font size = "7"><i>39.99</i></font>
-		<font size = "4"><br>8.5" x 11"  20Ib COPY PAPER
-		</font></th>
-        </tr>
-       </table></font>
-
-	<table width = "1000" CELLSPACING= 0 border = "1" 
-		bgcolor = "#bce3e0">
-		<tr height = "30">
-		   <th width = "25%">
-			<a href = "paperWhite.html">
-			<img width = "150" height = "150"
-			src = "Images/PaperCASE.png"></a>
-			<h3>Copy Paper: 8.5<q>"x11</q> White</h3>
-		   </th>
-		   <th width = "25%">
-			<a href = "paperBlue.html">
-			<img width = "150" height = "150"
-			src = "Images/PaperCASE.png"></a>
-		        <h3>Copy Paper: 8.5<q>"x11</q> Blue</h3>
-		   </th>
-		   <th width = "25%">
-			<a href = "paperRed.html">
-			<img width = "150" height = "150"
-			src = "Images/PaperCASE.png"></a>
-			<h3>Copy Paper: 8.5<q>"x11</q><br>Red</h3>
-		   </th>
-		   <th width = "25%">
-			<a href = "paperBlack.html">
-			<img width = "150" height = "150"
-			src = "Images/PaperCASE.png"></a>
-			<h3>Copy Paper: 8.5<q>"x11</q> Black</h3>
-		   </th>
-		   
-
-	</table>
+<body>
+<div class="logo"><a href="#"><img src="Images/Dunder_Mifflin_logo.png" width="100" height="40"></a>
+</div>
+<nav>
+    <ul>
+	<li><a href="index.html"> HOME</a></li>
+	<li><a href="products.html"> PAPER</a></li>
+	<li><a href="about.html"> ABOUT</a></li>
+	<li><a href="FAQ.html"> FAQ</a></li>
 	
-      </body>
+    </ul>
+</nav>
 
-      <footer>
 
-      <table width ="1000px" height = "500px" bgcolor = "#036ba8">
-        <tr>
-          <th>  
-          </th>
-        </tr>
-      </table>
-      </footer>
-</center>
+
+<img src="Images/Header_Image.png" width="100%">
+
+</body>
+
+
+<br></br>
+
+
+<footer class="footer">
+   <div class="footer-left">
+       <img src="Images/Dunder_Mifflin_logo.png" width="100" length="100" alt="">
+       <br></br>
+       <p><font color="white" face="Arial" size="1">Dunder Mifflin provides America's most trusted paper since 1986, specializing in standard print and colored papers, as well as specialty printers and office supplies.</font></p>
+   </div>
+
+
+
+<div class="footer-right">
+
+<font color="white" face = "Arial"><table width = "1000" bgcolor= "#1F618D"> 
+<th  width = "10%"><a href = "index.html"><b>HOME
+</b></a></th>
+<th width = "10%"><a href = "products.html"><b>PAPER
+</b></a></th>
+<th width = "10%"><a href = "about.html"><b>ABOUT
+</b></a></th>
+<th width = "10%"><a href = "FAQ.html"><b>FAQ
+</b></a></th>
+
+</div>
+
+</footer>
+
+
+
+
+
 </html>
