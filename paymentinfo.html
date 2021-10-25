@@ -52,207 +52,111 @@
 
 
       </nav>
-      <body bgcolor = "bob">
+      <font face = "Arial"><body>
+        <br><br><br><br>
+        <table cellspacing="0" cellpadding="0" style="text-align:center;background-color:white;border-color:black;border-style:solid;border-width:1;box-shadow: 5px 10px;">
+        <tr>
+          <td width="600px" height="500px">
 
-      <font face = "Arial"><table width = "1000" CELLSPACING=0
-		bgcolor = "#ffffff">
-        <tr height ="30">
-          <th>
+            <h1>PAYMENT INFORMATION</h1>
+      <div class="container">
+          <form>
+              <h2>CARDHOLDER NAME</h2>
+            <input type="text" name="FirstName" placeholder="First Name" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;">&nbsp&nbsp
+            <input type="text" name="LastName" placeholder="Last Name" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
 
+              <h2>CARD INFORMATION</h2>
+            <input type="text" name="CardNum" placeholder="XXXX-XXXX-XXXX-XXXX" required style="width: 300px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;">&nbsp&nbsp
+            <input type="text" name="CVC" placeholder="CVC" required style="width: 100px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
 
+            <input type="text" name="EXPDATE" placeholder="Expiration Date" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;">&nbsp&nbsp
+            <input type="text" name="ZIP" placeholder="ZIP Code" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
 
-            <font face = "Arial"><table width = "1000" CELLSPACING=0
-            bgcolor = "#ffffff">
-              <tr height ="30">
-                <th>
+            <input type="submit" value="SUBMIT" style="background-color: #036ba8;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 200px;">
 
+          </form>
+      </div>
+          </td>
+          <td width="600px" height="500px" style="border-left: 5px solid black;">
 
+            <h1>SHIPPING INFORMATION</h1>
+      <div class="container">
+          <form>
+              <h2>RECIPIENT NAME</h2>
+            <input type="text" name="FirstName" placeholder="First Name" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;">&nbsp&nbsp
+            <input type="text" name="LastName" placeholder="Last Name" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
 
-                  <font face = "Arial"><table width = "1000" CELLSPACING=0 style="background-color:#ffffff;">
-                    <tr>
-                      <th colspan="2" width="100%">
-                            <!-- PUT YOUR CODE HERE -->
-                            <h2>PAYMENT INFORMATION</h2>
-                            <br>
-                            <h3 style="text-align: center">CARDHOLDER NAME</h3>
-                      </th>
-                    </tr>
+              <h2>ADDRESS</h2>
+            <input type="text" name="StreetAddress" placeholder="Street Address" required style="width: 370px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;"><br>
 
-                    <form>
-                    <tr>
-                      <th width = "500" style="text-align: right;">
-                            <input type="text" name="fname" placeholder="First Name" style="width: 180px; height: 30px;">
-                      </th>
+            <input type="text" name="City" placeholder="City" required style="width: 160px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;">
+            <select required style="width: 150px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
+              <option value="" disabled selected>Select a State</option>
+              <option value="" disabled>------------------------</option>
+              <option value="AL">Alabama</option>
+            	<option value="AK">Alaska</option>
+            	<option value="AZ">Arizona</option>
+            	<option value="AR">Arkansas</option>
+            	<option value="CA">California</option>
+            	<option value="CO">Colorado</option>
+            	<option value="CT">Connecticut</option>
+            	<option value="DE">Delaware</option>
+            	<option value="DC">District Of Columbia</option>
+            	<option value="FL">Florida</option>
+            	<option value="GA">Georgia</option>
+            	<option value="HI">Hawaii</option>
+            	<option value="ID">Idaho</option>
+            	<option value="IL">Illinois</option>
+            	<option value="IN">Indiana</option>
+            	<option value="IA">Iowa</option>
+            	<option value="KS">Kansas</option>
+            	<option value="KY">Kentucky</option>
+            	<option value="LA">Louisiana</option>
+            	<option value="ME">Maine</option>
+            	<option value="MD">Maryland</option>
+            	<option value="MA">Massachusetts</option>
+            	<option value="MI">Michigan</option>
+            	<option value="MN">Minnesota</option>
+            	<option value="MS">Mississippi</option>
+            	<option value="MO">Missouri</option>
+            	<option value="MT">Montana</option>
+            	<option value="NE">Nebraska</option>
+            	<option value="NV">Nevada</option>
+            	<option value="NH">New Hampshire</option>
+            	<option value="NJ">New Jersey</option>
+            	<option value="NM">New Mexico</option>
+            	<option value="NY">New York</option>
+            	<option value="NC">North Carolina</option>
+            	<option value="ND">North Dakota</option>
+            	<option value="OH">Ohio</option>
+            	<option value="OK">Oklahoma</option>
+            	<option value="OR">Oregon</option>
+            	<option value="PA">Pennsylvania</option>
+            	<option value="RI">Rhode Island</option>
+            	<option value="SC">South Carolina</option>
+            	<option value="SD">South Dakota</option>
+            	<option value="TN">Tennessee</option>
+            	<option value="TX">Texas</option>
+            	<option value="UT">Utah</option>
+            	<option value="VT">Vermont</option>
+            	<option value="VA">Virginia</option>
+            	<option value="WA">Washington</option>
+            	<option value="WV">West Virginia</option>
+            	<option value="WI">Wisconsin</option>
+            	<option value="WY">Wyoming</option>
+            </select>
 
-                      <th width = "500" style="text-align: left;">
-                        <input type="text" name="lname" placeholder="Last Name" style="width: 180px; height: 30px;">
-                      </th>
-                    </tr>
+            <input type="text" name="ZIP" placeholder="ZIP" required style="width: 50px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;"><br>
+            <input type="submit" value="SUBMIT" style="background-color: #036ba8;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 200px;">
 
-                    <tr>
-                      <th colspan="2" width="100%">
-                        <h3 style="text-align: center">CARD NUMBER</h3>
-                      </th>
-                    </tr>
+          </form>
+      </div>
+          </td>
 
-                    <tr>
-                      <th width = "500" style="text-align: right;">
-                            <input type="text" name="cnum" placeholder="Card Number" style="width: 180px; height: 30px;">
-                      </th>
-
-                      <th width = "500" style="text-align: left;">
-                        <input type="text" name="cvc" placeholder="CVC" style="width: 180px; height: 30px;">
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th width = "500" style="text-align: right;">
-                            <input type="text" name="exdate" placeholder="Expiration Date" style="width: 180px; height: 30px;">
-                      </th>
-
-                      <th width = "500" style="text-align: left;">
-                        <input type="text" name="zip" placeholder="Zip Code" style="width: 180px; height: 30px;">
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th colspan="2" width="100%">
-                        <br>
-                        <input type="submit" value="SUBMIT" style="width: 300px; height: 30px; background-color:#036ba8; color:#ffffff;">
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th colspan="2" width="100%" height=50px>
-                      </th>
-                    </tr>
-
-                    </form>
-
-
-                    <form>
-                    <tr>
-
-                      <th colspan="2" width="100%">
-
-                        <h2 style="text-align: center">SHIPPING INFO<br><h2>
-
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th width = "500" style="text-align: right;">
-                            <input type="text" name="fname" placeholder="First Name" style="width: 180px; height: 30px;">
-                      </th>
-
-                      <th width = "500" style="text-align: left;">
-                        <input type="text" name="lname" placeholder="Last Name" style="width: 180px; height: 30px;">
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th colspan="2" width = "100%" style="text-align: center;">
-                            <input type="text" name="address" placeholder="Street Address" style="width: 370px; height: 30px;">
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th colspan="2" width = "100%" style="text-align: center;">
-                            <input type="text" name="City" placeholder="City" style="width: 255px; height: 30px;">
-                              <select name="state" id="state" style="width: 110px; height: 30px;">
-                                <option value="" disabled selected="selected">State</option>
-                                <option value="AL">Alabama</option>
-                                <option value="AK">Alaska</option>
-                                <option value="AZ">Arizona</option>
-                                <option value="AR">Arkansas</option>
-                                <option value="CA">California</option>
-                                <option value="CO">Colorado</option>
-                                <option value="CT">Connecticut</option>
-                                <option value="DE">Delaware</option>
-                                <option value="DC">District Of Columbia</option>
-                                <option value="FL">Florida</option>
-                                <option value="GA">Georgia</option>
-                                <option value="HI">Hawaii</option>
-                                <option value="ID">Idaho</option>
-                                <option value="IL">Illinois</option>
-                                <option value="IN">Indiana</option>
-                                <option value="IA">Iowa</option>
-                                <option value="KS">Kansas</option>
-                                <option value="KY">Kentucky</option>
-                                <option value="LA">Louisiana</option>
-                                <option value="ME">Maine</option>
-                                <option value="MD">Maryland</option>
-                                <option value="MA">Massachusetts</option>
-                                <option value="MI">Michigan</option>
-                                <option value="MN">Minnesota</option>
-                                <option value="MS">Mississippi</option>
-                                <option value="MO">Missouri</option>
-                                <option value="MT">Montana</option>
-                                <option value="NE">Nebraska</option>
-                                <option value="NV">Nevada</option>
-                                <option value="NH">New Hampshire</option>
-                                <option value="NJ">New Jersey</option>
-                                <option value="NM">New Mexico</option>
-                                <option value="NY">New York</option>
-                                <option value="NC">North Carolina</option>
-                                <option value="ND">North Dakota</option>
-                                <option value="OH">Ohio</option>
-                                <option value="OK">Oklahoma</option>
-                                <option value="OR">Oregon</option>
-                                <option value="PA">Pennsylvania</option>
-                                <option value="RI">Rhode Island</option>
-                                <option value="SC">South Carolina</option>
-                                <option value="SD">South Dakota</option>
-                                <option value="TN">Tennessee</option>
-                                <option value="TX">Texas</option>
-                                <option value="UT">Utah</option>
-                                <option value="VT">Vermont</option>
-                                <option value="VA">Virginia</option>
-                                <option value="WA">Washington</option>
-                                <option value="WV">West Virginia</option>
-                                <option value="WI">Wisconsin</option>
-                                <option value="WY">Wyoming</option>
-                            </select>
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th colspan="2" width = "100%" style="text-align: center;">
-                            <input type="text" name="zip" placeholder="zip" style="width: 60px; height: 30px;">
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th colspan="2" width="100%">
-                        <br>
-                        <input type="submit" value="SUBMIT" style="width: 300px; height: 30px; background-color:#036ba8; color:#ffffff;">
-                      </th>
-                    </tr>
-
-                    <tr>
-                      <th colspan="2" width="100%" height=200px>
-                      </th>
-                    </tr>
-
-                    </form>
-
-
-                  </table></font>
-
-
-
-                </th>
-              </tr>
-            </table></font>
-
-
-
-
-          </th>
         </tr>
-      </table></font>
 
-      </body>
+      </table>
+    </body></font>
 
       <footer>
 
