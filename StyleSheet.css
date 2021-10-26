@@ -46,7 +46,7 @@ body {
 
 Input[type=search]{
 	appearance: none;	
-	width: 100%	
+	width: 100%;
 	background-color: white;
 	background-position: 10px 10px;
 	background-repeat: no-repeat;
