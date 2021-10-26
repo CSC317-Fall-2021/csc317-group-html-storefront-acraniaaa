@@ -37,18 +37,17 @@
         display: grid;
         row-gap: 20px;
         column-gap: 10px;
-        grid-template-rows: [row0] 500px [row1] 500px;
+        grid-template-rows: [row0] 325px [row1] 325px;
         grid-template-columns: [col0] 20% [col1] auto [col2] auto [col3] auto;
       }
       
       .grid-product {
-        border: 1px ridge rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
         background-color: white;
         margin: 12px;
         display: grid;
         grid-template-rows: [r0] 200px [r1] auto;
         grid-template-columns: [c0] auto;
-        border-bottom: 3px solid grey;
       }
       .product-selection-container {
         margin-top: 10px;
@@ -65,7 +64,7 @@
         padding-left: 35px;
         margin-bottom: 12px;
         cursor: pointer;
-        font-size: 22px;
+        font-size: 20px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -143,83 +142,108 @@
 	   <li class = "navLi"><a href="products.html"> PAPER</a></li>
 	   <li class = "navLi"><a href="about.html"> ABOUT</a></li>
 	   <li class = "navLi"><a href="FAQ.html"> FAQ</a></li>
-
    	</ul>
    </nav>
 </header>
-      <font face = "Arial">
+      <font face = "Times New Roman">
         <h1 id = "products-title">Products</h1>
         <div class="grid-container">
           <div class = "product-selection">
               <div class = "product-selection-container">
-                <h4>Paper Size</h4>
+                <h3>Paper Size</h3>
                 <label class="container">8.5''x11''
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
                 
-                <label class="container">Two
+                <label class="container">11''x17''
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
                 
-                <label class="container">Three
+                <label class="container">8.5''x14''
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <br>
+                <h3>Paper Color</h3>
+                <label class="container">White
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
                 
-                <label class="container">Four
+                <label class="container">Blue
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
+                
+                <label class="container">Red
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Yellow
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">Pink
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Purple
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <br>
+                <h3></h3> 
               </div>
           </div>
           <div class = "grid-product">
             <div class = "product-image">
-            <a href = "paperOrange.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/paperWhite.png"></a>
             </div>
             <div class = "product-desc">
-              <br>Product Description 1
+              <br><h4>White Paper</h4>
             </div>
           </div>
           <div class = "grid-product">
             <div class = "product-image">
-              <a href = "paperBlack.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+              <a href = "paperYellow.html"><img width = "200" height = "200" src = "Images/paperYellow.png"></a>
             </div>
             <div class = "product-desc">
-              <br> Product Description 2
+              <br><h4>Yellow Paper</h4>
             </div>
           </div>
           <div class = "grid-product">
             <div class = "product-image"> 
-              <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+              <a href = "paperRed.html"><img width = "200" height = "200" src = "Images/paperRed.png"></a>
             </div>
             <div class = "product-desc">
-              <br> Product Description 3
+              <br><h4>Red Paper</h4>
             </div>
           </div>
           <div class = "grid-product">
             <div class = "product-image">
-              <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+              <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/paperPurple.png"></a>
             </div>
             <div class = "product-desc">
-              <br> Product Description 4
+              <br><h4>Purple Paper</h4>
             </div>
           </div>
           <div class = "grid-product">
             <div class = "product-image">
-              <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+              <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/paperBlue.png"></a>
             </div>
             <div class = "product-desc">
-              <br> Product Description 5
+              <br><h4>Blue Paper</h4>
             </div>
           </div>
           <div class = "grid-product">
             <div class = "product-image">
-              <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/PaperCASE.png"></a>
+              <a href = "paperPink.html"><img width = "200" height = "200" src = "Images/paperPink.png"></a>
             </div>
             <div class = "product-desc">
-              <br> Product Description 6
+              <br><h4>Pink Paper</h4>
             </div>
           </div>
         </div>

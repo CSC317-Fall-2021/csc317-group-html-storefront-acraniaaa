@@ -44,15 +44,6 @@ body {
 	float: right;
 }
 
-Input[type=search]{
-	appearance: none;	
-	width: 100%	
-	background-color: white;
-	background-position: 10px 10px;
-	background-repeat: no-repeat;
-	padding-left: 40px;
-}
-
 .footer {
 	width:100%;
 	background: #1F618D;
@@ -119,16 +110,16 @@ Input[type=search]{
    bottom: 20px;
    right: 20px;
    padding: 10px 25px;
-   background-color: green;
+   background-color: #1F618D;
    color: white;
    cursor: pointer;
    border-radius: 5px;
 }
 .product-remove:hover{
    background-color: white;
-   color: green;
+   color: #1F618D;
    font-weight: 600;
-   border: 1px solid green;
+   border: 1px solid #1F618D;
 }
 .product-quantity > input{
    width: 40px;
@@ -157,12 +148,12 @@ Input[type=search]{
    text-align: center;
    height: 40px;
    line-height: 40px;
-   background-color: #4CBB17;
+   background-color: #1F618D;
    color: white;
    text-decoration: none;
 }
 .cart-total a:hover{
-   background-color: #FF8600;
+   opacity: 0.8;
 }
 @media screen and (max-width: 700px){
    .remove{
