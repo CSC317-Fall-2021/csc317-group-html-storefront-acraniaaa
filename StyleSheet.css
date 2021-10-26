@@ -28,7 +28,7 @@ body {
 
 .navLi{	
 	float: left;
-	padding: 5px 0px 15px 100px;
+	padding: 9px 0px 15px 100px;
 }
 
 .navLi a{
@@ -39,6 +39,9 @@ body {
 	text-decoration: none;
 }
 
+.navLi a:hover{
+	background-color: #3b5a80;
+}
 
 .navRight{
 	float: right;
