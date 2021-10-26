@@ -21,7 +21,8 @@
     grid-row-end: r1;
     grid-column-start: c0;
     grid-column-end: c1;
-    font-size: 20px
+    margin-top: 25px;
+    font-size: 20px;
   }
   #product-desc {
     grid-row-start: r1;
