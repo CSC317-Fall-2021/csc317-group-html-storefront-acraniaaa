@@ -47,6 +47,29 @@ body {
 	float: right;
 }
 
+.title{
+	font-size: 50px;
+	font-weight: 1000;
+}
+
+.summary{
+	font-size: 40px;
+	color: white;
+	padding: 4px;
+	width: 1000px;
+	background-color: #3b5a80;
+	box-shadow: 5px 5px 10px #3b5a80
+}
+
+.sumText{
+	font-size: 30px;
+	color: white;
+	padding: 4px;
+	width: 1000px;
+	background-color: #3b5a80;
+	box-shadow: 5px 5px 10px #3b5a80
+}
+
 .footer {
 	width:100%;
 	background: #1F618D;
