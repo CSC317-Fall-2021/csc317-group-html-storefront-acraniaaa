@@ -53,7 +53,7 @@ body {
 }
 
 .summary{
-	font-size: 40px;
+	font-size: 20px;
 	color: white;
 	padding: 4px;
 	width: 1000px;
@@ -73,7 +73,7 @@ body {
 .footer {
 	width:100%;
 	background: #1F618D;
-	height: 75px;
+	height: 300px;
 }
 
 .logo img{
