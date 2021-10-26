@@ -44,15 +44,6 @@ body {
 	float: right;
 }
 
-Input[type=search]{
-	appearance: none;	
-	width: 100%;
-	background-color: white;
-	background-position: 10px 10px;
-	background-repeat: no-repeat;
-	padding-left: 40px;
-}
-
 .footer {
 	width:100%;
 	background: #1F618D;
