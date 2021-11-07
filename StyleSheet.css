@@ -3,50 +3,6 @@ body {
 	background: linear-gradient(to right, white 0%, white 100%);
 }
 
-.header{
-	display: flex;
-	align-items: center;
-	position: sticky;
-	height: 70px;
-	top: 0px;
-}
-
-.nav {
-	width:100%;
-	background:black;
-	height: 75px;
-	position: sticky;
-	top: 0;
-}
-
-.navUl{
-	list-style-type: none;
-	margin: 0;
-	padding: 0px 0px 0px 60px;
-	overflow: hidden;
-}
-
-.navLi{	
-	float: left;
-	padding: 9px 0px 15px 100px;
-}
-
-.navLi a{
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 20px 20px 16px 20px;
-	text-decoration: none;
-}
-
-.navLi a:hover{
-	background-color: #3b5a80;
-}
-
-.navRight{
-	float: right;
-}
-
 .title{
 	font-size: 50px;
 	font-weight: 1000;
