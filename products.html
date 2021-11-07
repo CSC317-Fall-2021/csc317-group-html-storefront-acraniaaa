@@ -3,7 +3,7 @@
   <title>Products | DUNDER MIFFLIN</title>
   <head>
     <link rel="stylesheet" href="IshaniStyleSheet.css">
-
+    <script src="products.js"></script>
     <link href = "StyleSheet.css" rel = "stylesheet">
     <!--The style of the page goes here-->
     <style>
@@ -50,6 +50,7 @@
         display: grid;
         grid-template-rows: [r0] 200px [r1] auto;
         grid-template-columns: [c0] auto;
+        transition-duration: 400ms;
       }
       .product-selection-container {
         margin-top: 10px;
@@ -57,17 +58,16 @@
       }
 
       .grid-product:hover {
+        transition-duration: 400ms;
         transform: scale(1.04);
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
-
+        
       }
         /*The following styles are taken from this website: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
         I had no idea how to customize checkboxes so I had to google it and found this source*/
 
-
       /* Customize the label (the container) */
-      .container {
+      .filter {
         display: block;
         position: relative;
         padding-left: 35px;
@@ -81,7 +81,7 @@
       }
 
       /* Hide the browser's default checkbox */
-      .container input {
+      .filter input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
@@ -101,12 +101,12 @@
       }
 
       /* On mouse-over, add a grey background color */
-      .container:hover input ~ .checkmark {
+      .filter:hover input ~ .checkmark {
         background-color: #ccc;
       }
 
       /* When the checkbox is checked, add a blue background */
-      .container input:checked ~ .checkmark {
+      .filter input:checked ~ .checkmark {
         background-color: #2196F3;
       }
 
@@ -118,12 +118,12 @@
       }
 
       /* Show the checkmark when checked */
-      .container input:checked ~ .checkmark:after {
+      .filter input:checked ~ .checkmark:after {
         display: block;
       }
 
       /* Style the checkmark/indicator */
-      .container .checkmark:after {
+      .filter .checkmark:after {
         left: 9px;
         top: 5px;
         width: 5px;
@@ -162,8 +162,8 @@
         </ul>
        </ul>
       </nav>
-   </header>
-
+    </header>
+    <main>
       <font face = "Times New Roman"><br><br><br>
         <center><img src="Images/Dunder_Mifflin_logo_Black.png" width=200px></center><br><br>
 
@@ -172,54 +172,54 @@
           <div class = "product-selection">
               <div class = "product-selection-container">
                 <h3>Paper Size</h3>
-                <label class="container">8.5''x11''
-                  <input type="checkbox">
+                <a href="#" class="btn" data-filter="all">All</a><br>
+                <label class="filter">8.5''x11''
+                  <input type="checkbox" class="filter-option" id="8.5x11">
                   <span class="checkmark"></span>
                 </label>
 
-                <label class="container">11''x17''
-                  <input type="checkbox">
+                <label class="filter">11''x17''
+                  <input type="checkbox" class="filter-option" id="11x17">
                   <span class="checkmark"></span>
                 </label>
 
-                <label class="container">8.5''x14''
+                <label class="filter">8.5''x14''
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
                 <br>
                 <h3>Paper Color</h3>
-                <label class="container">White
-                  <input type="checkbox">
+                <label class="filter">White
+                  <input type="checkbox" class = "filter-option" onclick="filterProduct('white')">
                   <span class="checkmark"></span>
                 </label>
 
-                <label class="container">Blue
-                  <input type="checkbox">
+                <label class="filter">Blue
+                  <input type="checkbox" class="filter-option" onclick="filterProduct('blue')">
                   <span class="checkmark"></span>
                 </label>
 
-                <label class="container">Red
-                  <input type="checkbox">
+                <label class="filter">Red
+                  <input type="checkbox" class="filter-option" onclick="filterProduct('red')">
                   <span class="checkmark"></span>
                 </label>
-                <label class="container">Yellow
-                  <input type="checkbox">
+                <label class="filter">Yellow
+                  <input type="checkbox" class="filter-option" onclick="filterProduct('yellow')">
                   <span class="checkmark"></span>
                 </label>
-
-                <label class="container">Pink
-                  <input type="checkbox">
+                <label class="filter">Pink
+                  <input type="checkbox" class="filter-option" onclick="filterProduct('pink')">
                   <span class="checkmark"></span>
                 </label>
-                <label class="container">Purple
-                  <input type="checkbox">
+                <label class="filter">Purple
+                  <input type="checkbox" class="filter-option" onclick="filterProduct('purple')">
                   <span class="checkmark"></span>
                 </label>
                 <br>
                 <h3></h3>
               </div>
           </div>
-          <div class = "grid-product">
+          <div class = "grid-product" id="white">
             <div class = "product-image">
             <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/paperWhite.png"></a>
             </div>
@@ -227,7 +227,7 @@
               <br><h4>White Paper</h4>
             </div>
           </div>
-          <div class = "grid-product">
+          <div class = "grid-product" id="yellow">
             <div class = "product-image">
               <a href = "paperYellow.html"><img width = "200" height = "200" src = "Images/paperYellow.png"></a>
             </div>
@@ -235,7 +235,7 @@
               <br><h4>Yellow Paper</h4>
             </div>
           </div>
-          <div class = "grid-product">
+          <div class = "grid-product" id="red">
             <div class = "product-image">
               <a href = "paperRed.html"><img width = "200" height = "200" src = "Images/paperRed.png"></a>
             </div>
@@ -243,7 +243,7 @@
               <br><h4>Red Paper</h4>
             </div>
           </div>
-          <div class = "grid-product">
+          <div class = "grid-product" id ="purple">
             <div class = "product-image">
               <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/paperPurple.png"></a>
             </div>
@@ -251,7 +251,7 @@
               <br><h4>Purple Paper</h4>
             </div>
           </div>
-          <div class = "grid-product">
+          <div class = "grid-product" id = "blue">
             <div class = "product-image">
               <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/paperBlue.png"></a>
             </div>
@@ -259,7 +259,7 @@
               <br><h4>Blue Paper</h4>
             </div>
           </div>
-          <div class = "grid-product">
+          <div class = "grid-product" id="pink">
             <div class = "product-image">
               <a href = "paperPink.html"><img width = "200" height = "200" src = "Images/paperPink.png"></a>
             </div>
@@ -269,7 +269,7 @@
           </div>
         </div>
       </font>
-
+    </main>
   </body>
 
   <footer class = "footer">
