@@ -2,7 +2,7 @@
   overflow: hidden;
   background-color: black;
   padding: 15px;
-  position: absolute;
+  z-index: 10;
 }
 
 .nav a {
