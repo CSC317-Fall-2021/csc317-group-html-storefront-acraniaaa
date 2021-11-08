@@ -2,7 +2,6 @@
 <html>
   <title>Products | DUNDER MIFFLIN</title>
   <head>
-    <link rel="stylesheet" href="IshaniStyleSheet.css">
     <script src="products.js"></script>
     <link href = "StyleSheet.css" rel = "stylesheet">
     <!--The style of the page goes here-->
@@ -29,7 +28,6 @@
 
       .product-desc {
         text-align: center;
-        margin:20px;
         background-color: white;
         grid-row-start: r1;
         grid-row-end: auto;
@@ -40,7 +38,7 @@
         row-gap: 20px;
         column-gap: 10px;
         grid-template-rows: [row0] 325px [row1] 325px;
-        grid-template-columns: [col0] 20% [col1] auto [col2] auto [col3] auto;
+        grid-template-columns: [col0] 20% [col1] auto [col2] auto [col3] auto [col4] auto;
       }
 
       .grid-product {
@@ -139,29 +137,22 @@
   </head>
 
   <!--Navigation links-->
-  <body>
+  <body class = "body">
     <header class = "header">
-      <nav class = "nav">
-         <ul class = "navUl">
-        <li class = "logo"><a href="home.html"><img
-       src="Images/Dunder_Mifflin_logo.png" width="100"
-       height="40"></a>
-        </li>
-        <li class = "navLi"><a href="home.html"> HOME</a></li>
-        <li class = "navLi"><a href="products.html"> PAPER</a></li>
-        <li class = "navLi"><a href="about.html"> ABOUT</a></li>
-        <li class = "navLi"><a href="FAQ.html"> FAQ</a></li>
-        <ul class = "navRight" style = "list-style: none;">
-        <li class = "navLi"><form><input type = "search"
-       placeholder = "Search" style="width: 300px;padding: 9px 			20px;margin: 10px 0;display:inline-block;border: 1px solid
-       #ccc;box-sizing: border-box;"></form></li>
-
-        <li class = "navLi"><a href = "cart.html"> <img width = "20"
-       height = "20" src = "Images/cart_icon.png"></a></li>
-        <li class = "navLi"><a href = "login.html">LOG IN</a></li>
-        </ul>
-       </ul>
-      </nav>
+      <div class = "nav">
+        <img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
+        <a class = "leftNav" href="index.html"> HOME</a>
+        <a class = "leftNav" href="products.html"> PAPER</a>
+        <a class = "leftNav" href="about.html"> ABOUT</a>
+        <a class = "leftNav" href="FAQ.html"> FAQ</a>
+        <a class = "rightNav" href = "login.html">LOG IN</a>
+        <a class = "rightNav" href = "cart.html"><img class = "rightImg" width = "30" 
+          height = "30" src = "Images/cart_icon.png"></a>
+        <form class = "rightNav"><input type = "search" placeholder = "Search" 
+          style="width: 300px; padding: 9px 20px; margin: 18px 10px; 
+          display:inline-block; border: 1px solid#ccc; box-sizing: 
+          border-box;"></form>
+      </div>
     </header>
     <main>
       <font face = "Times New Roman"><br><br><br>
@@ -172,54 +163,53 @@
           <div class = "product-selection">
               <div class = "product-selection-container">
                 <h3>Paper Size</h3>
-                <a href="#" class="btn" data-filter="all">All</a><br>
                 <label class="filter">8.5''x11''
-                  <input type="checkbox" class="filter-option" id="8.5x11">
+                  <input type="checkbox" class="filter-option" data-size = "size8.5_11" onclick= "filterProductSize(this)">
                   <span class="checkmark"></span>
                 </label>
 
                 <label class="filter">11''x17''
-                  <input type="checkbox" class="filter-option" id="11x17">
+                  <input type="checkbox" class="filter-option" data-size = "size11_17" onclick= "filterProductSize(this)">
                   <span class="checkmark"></span>
                 </label>
 
                 <label class="filter">8.5''x14''
-                  <input type="checkbox">
+                  <input type="checkbox" class="filter-option" data-size = "size8.5_14" onclick= "filterProductSize(this)">
                   <span class="checkmark"></span>
                 </label>
                 <br>
                 <h3>Paper Color</h3>
                 <label class="filter">White
-                  <input type="checkbox" class = "filter-option" onclick="filterProduct('white')">
+                  <input type="checkbox" class = "filter-option" data-color = "white" onclick= "filterProductColor(this)">
                   <span class="checkmark"></span>
                 </label>
 
                 <label class="filter">Blue
-                  <input type="checkbox" class="filter-option" onclick="filterProduct('blue')">
+                  <input type="checkbox" class = "filter-option" data-color = "blue" onclick= "filterProductColor(this)">
                   <span class="checkmark"></span>
                 </label>
 
                 <label class="filter">Red
-                  <input type="checkbox" class="filter-option" onclick="filterProduct('red')">
+                  <input type="checkbox" class = "filter-option" data-color = "red" onclick= "filterProductColor(this)">
                   <span class="checkmark"></span>
                 </label>
                 <label class="filter">Yellow
-                  <input type="checkbox" class="filter-option" onclick="filterProduct('yellow')">
+                  <input type="checkbox" class = "filter-option" data-color = "yellow" onclick= "filterProductColor(this)">
                   <span class="checkmark"></span>
                 </label>
                 <label class="filter">Pink
-                  <input type="checkbox" class="filter-option" onclick="filterProduct('pink')">
+                  <input type="checkbox" class = "filter-option" data-color = "pink" onclick= "filterProductColor(this)">
                   <span class="checkmark"></span>
                 </label>
                 <label class="filter">Purple
-                  <input type="checkbox" class="filter-option" onclick="filterProduct('purple')">
+                  <input type="checkbox" class = "filter-option" data-color = "purple" onclick= "filterProductColor(this)">
                   <span class="checkmark"></span>
                 </label>
                 <br>
                 <h3></h3>
               </div>
           </div>
-          <div class = "grid-product" id="white">
+          <div class = "grid-product" data-color= "white" data-size = "size8.5_11">
             <div class = "product-image">
             <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/paperWhite.png"></a>
             </div>
@@ -227,7 +217,7 @@
               <br><h4>White Paper</h4>
             </div>
           </div>
-          <div class = "grid-product" id="yellow">
+          <div class = "grid-product" data-color= "yellow" data-size = "size8.5_11">
             <div class = "product-image">
               <a href = "paperYellow.html"><img width = "200" height = "200" src = "Images/paperYellow.png"></a>
             </div>
@@ -235,15 +225,15 @@
               <br><h4>Yellow Paper</h4>
             </div>
           </div>
-          <div class = "grid-product" id="red">
+          <div class = "grid-product" data-color= "red" data-size = "size11_17">
             <div class = "product-image">
               <a href = "paperRed.html"><img width = "200" height = "200" src = "Images/paperRed.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>Red Paper</h4>
+              <br><h4>Red Paper<br>11<q>x17</q></h4>
             </div>
           </div>
-          <div class = "grid-product" id ="purple">
+          <div class = "grid-product" data-color= "purple" data-size = "size11_17">
             <div class = "product-image">
               <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/paperPurple.png"></a>
             </div>
@@ -251,7 +241,7 @@
               <br><h4>Purple Paper</h4>
             </div>
           </div>
-          <div class = "grid-product" id = "blue">
+          <div class = "grid-product" data-color= "blue" data-size = "size11_17">
             <div class = "product-image">
               <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/paperBlue.png"></a>
             </div>
@@ -259,12 +249,20 @@
               <br><h4>Blue Paper</h4>
             </div>
           </div>
-          <div class = "grid-product" id="pink">
+          <div class = "grid-product" data-color= "pink" data-size = "size8.5_14">
             <div class = "product-image">
               <a href = "paperPink.html"><img width = "200" height = "200" src = "Images/paperPink.png"></a>
             </div>
             <div class = "product-desc">
               <br><h4>Pink Paper</h4>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "white" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/paperWhite.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>White Paper</h4><br>
             </div>
           </div>
         </div>
