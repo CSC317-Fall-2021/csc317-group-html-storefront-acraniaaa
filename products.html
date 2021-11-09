@@ -23,7 +23,7 @@
         text-align: center;
         grid-row-start: r0;
         grid-row-end: r1;
-
+        padding-top: 10px;
       }
 
       .product-desc {
@@ -37,8 +37,8 @@
         display: grid;
         row-gap: 20px;
         column-gap: 10px;
-        grid-template-rows: [row0] 325px [row1] 325px;
-        grid-template-columns: [col0] 20% [col1] auto [col2] auto [col3] auto [col4] auto;
+        grid-template-rows: [row0] 325px [row1] 325px [row2] 325px [row3] 325px;
+        grid-template-columns: [col0] 15% [col1] auto [col2] auto [col3] auto [col4] auto [col5] auto;
       }
 
       .grid-product {
@@ -160,22 +160,6 @@
         <div class="grid-container">
           <div class = "product-selection">
               <div class = "product-selection-container">
-                <h3>Paper Size</h3>
-                <label class="filter">8.5''x11''
-                  <input type="checkbox" class="filter-option" data-size = "size8.5_11" onclick= "filterProductSize(this)">
-                  <span class="checkmark"></span>
-                </label>
-
-                <label class="filter">11''x17''
-                  <input type="checkbox" class="filter-option" data-size = "size11_17" onclick= "filterProductSize(this)">
-                  <span class="checkmark"></span>
-                </label>
-
-                <label class="filter">8.5''x14''
-                  <input type="checkbox" class="filter-option" data-size = "size8.5_14" onclick= "filterProductSize(this)">
-                  <span class="checkmark"></span>
-                </label>
-                <br>
                 <h3>Paper Color</h3>
                 <label class="filter">White
                   <input type="checkbox" class = "filter-option" data-color = "white" onclick= "filterProductColor(this)">
@@ -212,7 +196,7 @@
             <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/paperWhite.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>White Paper</h4>
+              <br><h4>White Printer Paper</h4>
             </div>
           </div>
           <div class = "grid-product" data-color= "yellow" data-size = "size8.5_11">
@@ -220,7 +204,7 @@
               <a href = "paperYellow.html"><img width = "200" height = "200" src = "Images/paperYellow.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>Yellow Paper</h4>
+              <br><h4>Yellow Printer Paper</h4>
             </div>
           </div>
           <div class = "grid-product" data-color= "red" data-size = "size11_17">
@@ -228,7 +212,7 @@
               <a href = "paperRed.html"><img width = "200" height = "200" src = "Images/paperRed.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>Red Paper<br>11<q>x17</q></h4>
+              <br><h4>Red Printer Paper<br>11<q>x17</q></h4>
             </div>
           </div>
           <div class = "grid-product" data-color= "purple" data-size = "size11_17">
@@ -236,7 +220,7 @@
               <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/paperPurple.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>Purple Paper</h4>
+              <br><h4>Purple Printer Paper</h4>
             </div>
           </div>
           <div class = "grid-product" data-color= "blue" data-size = "size11_17">
@@ -244,7 +228,7 @@
               <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/paperBlue.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>Blue Paper</h4>
+              <br><h4>Blue Printer Paper</h4>
             </div>
           </div>
           <div class = "grid-product" data-color= "pink" data-size = "size8.5_14">
@@ -252,15 +236,103 @@
               <a href = "paperPink.html"><img width = "200" height = "200" src = "Images/paperPink.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>Pink Paper</h4>
+              <br><h4>Pink Printer Paper</h4>
             </div>
           </div>
           <div class = "grid-product" data-color= "white" data-size = "size8.5_14">
             <div class = "product-image">
-            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/paperWhite.png"></a>
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/origamiWhite.png"></a>
             </div>
             <div class = "product-desc">
-              <br><h4>White Paper</h4><br>
+              <br><h4>White Origami Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "yellow" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/origamiYellow.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Yellow Origami Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "red" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/origamiRed.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Red Origami Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "purple" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/origamiPurple.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Purple Origami Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "blue" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/origamiBlue.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Blue Origami Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "pink" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperPink.html"><img width = "200" height = "200" src = "Images/origamiPink.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Pink Origami Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "white" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/craftWhite.jpg"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>White Kraft Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "yellow" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperYellow.html"><img width = "200" height = "200" src = "Images/craftYellow.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Yellow Kraft Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "red" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperRed.html"><img width = "200" height = "200" src = "Images/craftRed.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Red Kraft Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "purple" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/craftPurple.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Purple Kraft Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "blue" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/craftBlue.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Blue Kraft Paper</h4><br>
+            </div>
+          </div>
+          <div class = "grid-product" data-color= "pink" data-size = "size8.5_14">
+            <div class = "product-image">
+            <a href = "paperWhite.html"><img width = "200" height = "200" src = "Images/craftPink.png"></a>
+            </div>
+            <div class = "product-desc">
+              <br><h4>Pink Kraft Paper</h4><br>
             </div>
           </div>
         </div>

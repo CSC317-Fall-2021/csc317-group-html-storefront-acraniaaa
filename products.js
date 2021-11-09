@@ -29,7 +29,6 @@ function filterProductColor(color) {
 
 function addToFilter(filter, array) {
     if(array.includes(filter)){
-        console.log("wtf");
         //gets the index number of the filter, in order to remove the filter (since it can be anywhere in the array)
         let x = array.indexOf(filter);
         array.splice(x, 1)
