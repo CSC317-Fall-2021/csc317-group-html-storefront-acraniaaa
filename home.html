@@ -2,18 +2,39 @@
 <html>
 <head>
 <title>HOME | DUNDER MIFFLIN</title>
-<link rel="stylesheet" href="IshaniStyleSheet.css">
+<! <link rel="stylesheet" href="IshaniStyleSheet.css"/>
 
-<link href = "StyleSheet.css" rel = "stylesheet">
-
+<link href = "StyleSheet.css" rel = "stylesheet"> 
 </head>
 
+
+
+
+
 <body>
+
+   <button name="changec">Switch Color</button>
+   <script type="text/javascript">
+	var i = 0;
+	function changeColor()
+			{
+	var color = ["#192a45","#282828", "white"];
+                	
+		i = i < color.length ? ++i : 0;
+		document.querySelector("body").style.background = color[i];
+	}
+	       
+	document.querySelector('[name="changec"]').addEventListener("click",changeColor);
+   </script>
+
+
+
+
 <header class = "header">
    <nav class = "nav">
     	<ul class = "navUl">
 	   <li class = "logo"><a href="home.html"><img
-		src="Images/Dunder_Mifflin_logo.png" width="100"
+		src="Dunder_Mifflin_logo.png" width="100"
 		height="40"></a>
 	   </li>
 	   <li class = "navLi"><a href="home.html"> HOME</a></li>
@@ -22,25 +43,60 @@
 	   <li class = "navLi"><a href="FAQ.html"> FAQ</a></li>
 	   <ul class = "navRight" style = "list-style: none;">
 	   <li class = "navLi"><form><input type = "search"
-		placeholder = "Search" style="width: 300px;padding: 9px 			20px;margin: 10px 0;display:inline-block;border: 1px solid
+		placeholder = "Search" style="width: 300px;padding: 9px      20px;margin: 10px 0;display:inline-block;border: 1px solid
 		#ccc;box-sizing: border-box;"></form></li>
 
 	   <li class = "navLi"><a href = "cart.html"> <img width = "20"
-		height = "20" src = "Images/cart_icon.png"></a></li>
+		height = "20" src = "cart_icon.png"></a></li>
 	   <li class = "navLi"><a href = "login.html">LOG IN</a></li>
 	   </ul>
   	</ul>
    </nav>
 </header>
 
-<img src="Images/Header_Image.png" width="100%">
+
+
+   <script>
+	  var i = 0;
+	  var images = [];
+	  var time = 3000;
+
+
+	  images[0] = 'Header_Image.png';
+	  images[1] = 'kids.png';
+	  images[2] = 'CSC_317_DUNDER_MIFFLIN_IMG_33.png';
+
+	  function changeImg(){
+		document.slide.src = images[i];
+
+		if(i < images.length - 1) {
+		   i++;
+		} else {
+		  i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	  }
+
+	  window.onload = changeImg;
+
+    </script>
+
+
+
+
+
+
+
+<img name="slide" width="100%" height=500>
 <center>
+
 
 	<table>
 		<tr>
 	<td>
 
-		<img src = "Images/PaperCASE.png" width=500px>
+		<img src = "PaperCASE.png" width=500px>
 
 	</td>
 
@@ -61,13 +117,13 @@
 <br><br>
 <table>
 	<td>
-		<tr><a href="paperBlue.html"><img src = "Images/paperBlue.png"
+		<tr><a href="paperBlue.html"><img src = "paperBlue.png"
 	width = "200" height = "200"></a></tr>
-		<tr><a href="paperPink.html"><img src = "Images/paperPink.png"
+		<tr><a href="paperPink.html"><img src = "paperPink.png"
 	width = "200" height = "200"></a></tr>
-		<tr><a href="paperYellow.html"><img src = "Images/paperYellow.png"
+		<tr><a href="paperYellow.html"><img src = "paperYellow.png"
 	width = "200" height = "200"></a></tr>
-		<tr><a href="paperRed.html"><img src = "Images/paperRed.png"
+		<tr><a href="paperRed.html"><img src = "paperRed.png"
 	width = "200" height = "200"></a></tr>
 	</td>
 </table>
