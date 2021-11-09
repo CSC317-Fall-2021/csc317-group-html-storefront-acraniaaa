@@ -3,6 +3,21 @@
   background: linear-gradient(to right, white 0%, white 100%);
 }
 
+button
+{
+	position: absolute;
+	top: 100%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	background: #1F618D;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
 .nav {
   overflow: hidden;
   background-color: black;
