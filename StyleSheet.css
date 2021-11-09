@@ -1,6 +1,8 @@
 .body {
   background-repeat: no-repeat;
   background: linear-gradient(to right, white 0%, white 100%);
+  margin:0;
+
 }
 
 button
