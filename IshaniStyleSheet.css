@@ -11,27 +11,6 @@ body {
 	top: 0px;
 }
 
-.navUl{
-	list-style-type: none;
-	margin: 0;
-	padding: 0px 0px 0px 60px;
-	overflow: hidden;
-}
-
-.navLi{	
-	float: left;
-	padding: 5px 0px 15px 100px;
-}
-
-.navLi a{
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 20px 20px 16px 20px;
-	text-decoration: none;
-}
-
-
 .navRight{
 	float: right;
 }
