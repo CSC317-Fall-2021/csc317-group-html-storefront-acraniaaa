@@ -11,14 +11,6 @@ body {
 	top: 0px;
 }
 
-.nav {
-	width:100%;
-	background:black;
-	height: 75px;
-	position: sticky;
-	top: 0;
-}
-
 .navUl{
 	list-style-type: none;
 	margin: 0;
