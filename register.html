@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Register | DUNDER MIFFLIN</title>
-<link rel="stylesheet" href="IshaniStyleSheet.css">
+<title>Dunder Mifflin</title>
 
 <link href = "StyleSheet.css" rel = "stylesheet">
 
 </head>
 
-<body>
-<header class = "header">
-   <nav class = "nav">
-    	<ul class = "navUl">
-	   <li class = "logo"><a href="home.html"><img
-		src="Images/Dunder_Mifflin_logo.png" width="100"
-		height="40"></a>
-	   </li>
-	   <li class = "navLi"><a href="home.html"> HOME</a></li>
-	   <li class = "navLi"><a href="products.html"> PAPER</a></li>
-	   <li class = "navLi"><a href="about.html"> ABOUT</a></li>
-	   <li class = "navLi"><a href="FAQ.html"> FAQ</a></li>
-	   <ul class = "navRight" style = "list-style: none;">
-	   <li class = "navLi"><form><input type = "search"
-		placeholder = "Search" style="width: 300px;padding: 9px
-		20px;margin: 10px 0;display:inline-block;border: 1px solid
-		#ccc;box-sizing: border-box;"></form></li>
-
-	   <li class = "navLi"><a href = "cart.html"> <img width = "20"
-		height = "20" src = "Images/cart_icon.png"></a></li>
-	   <li class = "navLi"><a href = "login.html">LOG IN</a></li>
-	   </ul>
-  	</ul>
-   </nav>
-</header>
+<body class = "body">
+<div class = "nav">
+	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
+	<a class = "leftNav" href="index.html"> HOME</a>
+	<a class = "leftNav" href="products.html"> PAPER</a>
+	<a class = "leftNav" href="about.html"> ABOUT</a>
+	<a class = "leftNav" href="FAQ.html"> FAQ</a>
+	<a class = "rightNav" href = "login.html">LOG IN</a>
+	<a class = "rightNav" href = "cart.html"><img class = "rightImg" width = "30" 
+		height = "30" src = "Images/cart_icon.png"></a>
+	<form class = "rightNav"><input type = "search" placeholder = "Search" 
+		style="width: 300px; padding: 9px 20px; margin: 18px 10px; 
+		display:inline-block; border: 1px solid#ccc; box-sizing: 
+		border-box;"></form>
+</div>
 
 <p>
 
@@ -55,8 +44,8 @@
         <input type="password" name="ConfPassword" placeholder="Confirm Password" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
 
         <input type="checkbox" id="TOS" name="agree" value="TOS" required>
-        <label for="TOS"> I agree to the <a href="DMTOS.html">TERMS OF SERVICE</a></label><br><br>
-
+        <label for="TOS"> I agree to the <br><a href="DMTOS.html">TERMS OF SERVICE</a></label><br>
+<br>
         <input type="submit" value="REGISTER" style="background-color: #036ba8;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 200px;">
 
       </form>
@@ -74,14 +63,10 @@
 
 
 <br></br>
-
+</body>
 
 <footer class="footer">
 
 </footer>
-
-
-
-
 
 </html>
