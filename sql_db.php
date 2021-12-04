@@ -3,20 +3,32 @@
 $servername = "localhost";
 $username = "user";
 $password = "password";
-// Create connection
+// CONNECTION TO CREATE DATABASES
 $conn = new mysqli($servername, $username, $password);
-//see if i can create a new user to be able to connect to the server with privileges 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
 // Create database
-$sql = "CREATE DATABASE IF NOT EXISTS cosmos";
+$sql = "CREATE DATABASE IF NOT EXISTS main";
 if ($conn->query($sql) === TRUE) {
   echo "Database created successfully";
 } else {
   echo "Error creating database: " . $conn->error;
+}
+echo "<br>";
+//copy and paste lines 11 to 17 and replace database name under this
+$conn->close();
+$database = "main";
+$conn = new mysqli($servername, $username, $password, $database);
+$sql = "CREATE TABLE products (
+  id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  color VARCHAR(30) NOT NULL,
+  product_type VARCHAR(30) NOT NULL,
+  img IMAGE NOT NULL,
+  product_price VARCHAR(20) NOT NULL
+  )";
+//create new table under here
+if ($conn->query($sql) === TRUE) {
+  echo "Table products created successfully";
+} else {
+  echo "Error creating table: " . $conn->error;
 }
 
 $conn->close();
