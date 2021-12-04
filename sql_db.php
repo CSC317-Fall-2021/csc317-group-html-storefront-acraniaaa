@@ -17,13 +17,14 @@ echo "<br>";
 $conn->close();
 $database = "main";
 $conn = new mysqli($servername, $username, $password, $database);
-$sql = "CREATE TABLE products (
+$sql = "CREATE TABLE IF NOT EXISTS products (
   id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   color VARCHAR(30) NOT NULL,
   product_type VARCHAR(30) NOT NULL,
-  img IMAGE NOT NULL,
-  product_price VARCHAR(20) NOT NULL
+  product_price VARCHAR(30) NOT NULL,
+  image_path VARCHAR(50) NOT NULL
   )";
+
 //create new table under here
 if ($conn->query($sql) === TRUE) {
   echo "Table products created successfully";
