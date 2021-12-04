@@ -25,6 +25,21 @@ $sql = "CREATE TABLE IF NOT EXISTS products (
   image_path VARCHAR(50) NOT NULL
   )";
 
+  //User Info
+  $sql = "CREATE TABLE IF NOT EXISTS userInfo (
+    first_name VARCHAR (50) NOT NULL,
+    last_name VARCHAR (50) NOT NULL,
+    username VARCHAR (50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    pass_word VARCHAR(50) NOT NULL
+    )";
+
+  //Login Info
+  $sql = "CREATE TABLE IF NOT EXISTS loginInfo (
+    username VARCHAR(50) NOT NULL,
+    pass_word VARCHAR(50) NOT NULL
+    )";
+
 //create new table under here
 if ($conn->query($sql) === TRUE) {
   echo "Table products created successfully";
