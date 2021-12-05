@@ -6,8 +6,12 @@
 
         $sql = "INSERT INTO loginInfo (username, pass_word)
                 VALUES ($USERNAME, $PASSWORD);";
-                $conn->query($sql);
 
+                if ($conn->query($sql) === TRUE) {
+                    echo "Info received";
+                  } else {
+                    echo "Error creating database: " . $conn->error;
+                  }
     
     $conn->close();
 ?>
