@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <title>Paper | DUNDER MIFFLIN</title>
+  <title>Copy Paper: 8.5x11 White | DUNDER MIFFLIN</title>
   <head>
     <link href = "StyleSheet.css" rel = "stylesheet">
-    <link href = "CheckoutStyleSheet.css" rel = "stylesheet">
-
     <link href = "paperStyle.css" rel = "stylesheet">
   </head>
   <!--Header links-->
   <body>
-    <header class = "header">
-      <nav class = "nav">
-         <ul class = "navUl">
-        <li class = "logo"><a href="home.html"><img
-       src="Images/Dunder_Mifflin_logo.png" width="100"
-       height="40"></a>
-        </li>
-        <li class = "navLi"><a href="home.html"> HOME</a></li>
-        <li class = "navLi"><a href="products.html"> PAPER</a></li>
-        <li class = "navLi"><a href="about.html"> ABOUT</a></li>
-        <li class = "navLi"><a href="FAQ.html"> FAQ</a></li>
-
-        </ul>
-      </nav>
-   </header>
-    <font face = "Arial">
+    
+    <div class = "nav">
+	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
+	<a class = "leftNav" href="index.html"> HOME</a>
+	<a class = "leftNav" href="products.html"> PAPER</a>
+	<a class = "leftNav" href="about.html"> ABOUT</a>
+	<a class = "leftNav" href="FAQ.html"> FAQ</a>
+	<a class = "rightNav" href = "login.html">LOG IN</a>
+	<a class = "rightNav" href = "cart.html"><img class = "rightImg" width = "30" 
+		height = "30" src = "Images/cart_icon.png"></a>
+	<form class = "rightNav"><input type = "search" placeholder = "Search" 
+		style="width: 300px; padding: 9px 20px; margin: 18px 10px; 
+		display:inline-block; border: 1px solid#ccc; box-sizing: 
+		border-box;"></form>
+</div>
+    
+    <font face = "Times New Roman">
       <div class = "grid-container">
         <div id = "product-image">
-          <img width="400" height = "400" src = "Images/PaperCASE.png">
+          <img width="400" height = "400" src = "Images/PaperWhite.png">
         </div>
         <div id = "product-name">
-          <h2>Copy Paper: 8.5<q>x11</q> 20lb. White</h2>
+          <h2>Copy Paper: 8.5<q>x11</q> White</h2>
         </div>
         <div id = "product-desc">
           <p id = "paragraph-title"><b>Product Description</b></p>
           <ul id = "product-desc-list">
-            <li>8.5x<q>11</q></li>
-            <li>20lb</li>
+            <li>8.5<q>x11</q></li>
             <li>92 TAPPI Brightness</li>
-            <li>10 Reams</li>
+            <li>2 Reams</li>
             <li>White</li>
           </ul>
 
@@ -47,7 +45,7 @@
           <br><b>100% Recycled Paper!</b><br><b>99.92% Jam Free-Guarantee!</b></p>
         </div>
         <div class = "product-buy">
-            <b>Price: $39.99</b><br><br>
+            <b>Price: $9.99</b><br><br>
             <input type="button" id="product-button-buy" value="Add to Cart">
         </div>
         <div id="similar-products-title">
@@ -55,13 +53,16 @@
         </div>
         <div class = "similar-products"></div>
           <div id = "product-one">
-            <img width="200" height = "200" src = "Images/PaperCASE.png">
+            <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/paperPurple.png"></a>
+            <br><h4>Purple Paper</h4>
           </div>
           <div id = "product-two">
-            <img width="200" height = "200" src = "Images/PaperCASE.png">
+            <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/paperBlue.png"></a>
+            <br><h4>Blue Paper</h4>
           </div>
           <div id = "product-three">
-            <img width="200" height = "200" src = "Images/PaperCASE.png">
+            <a href = "paperYellow.html"><img width = "200" height = "200" src = "Images/paperYellow.png"></a>
+            <br><h4>Yellow Paper</h4>
           </div>
       </div>
     </font>
