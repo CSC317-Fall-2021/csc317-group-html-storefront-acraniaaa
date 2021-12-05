@@ -6,6 +6,8 @@
 
         $sql = "INSERT INTO loginInfo (username, pass_word)
                 VALUES ($USERNAME, $PASSWORD);";
+                $conn->query($sql);
+
     
     $conn->close();
 ?>
