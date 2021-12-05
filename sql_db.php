@@ -7,13 +7,8 @@ $password = "password";
 $conn = new mysqli($servername, $username, $password);
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS main";
-if ($conn->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $conn->error;
-}
+$conn->query($sql);
 echo "<br>";
-//copy and paste lines 11 to 17 and replace database name under this
 $conn->close();
 $database = "main";
 $conn = new mysqli($servername, $username, $password, $database);
@@ -24,28 +19,22 @@ $sql = "CREATE TABLE IF NOT EXISTS products (
   product_price VARCHAR(30) NOT NULL,
   image_path VARCHAR(50) NOT NULL
   )";
-
+$conn->query($sql);
   //User Info
-  $sql = "CREATE TABLE IF NOT EXISTS userInfo (
-    first_name VARCHAR (50) NOT NULL,
-    last_name VARCHAR (50) NOT NULL,
-    username VARCHAR (50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    pass_word VARCHAR(50) NOT NULL
-    )";
-
+$sql = "CREATE TABLE IF NOT EXISTS userInfo (
+  first_name VARCHAR (50) NOT NULL,
+  last_name VARCHAR (50) NOT NULL,
+  username VARCHAR (50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  pass_word VARCHAR(50) NOT NULL
+  )";
+$conn->query($sql);
   //Login Info
-  $sql = "CREATE TABLE IF NOT EXISTS loginInfo (
-    username VARCHAR(50) NOT NULL,
-    pass_word VARCHAR(50) NOT NULL
-    )";
-
-//create new table under here
-if ($conn->query($sql) === TRUE) {
-  echo "Table products created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$sql = "CREATE TABLE IF NOT EXISTS loginInfo (
+  username VARCHAR(50) NOT NULL,
+  pass_word VARCHAR(50) NOT NULL
+  )";
+$conn->query($sql);
 
 $conn->close();
 ?>
