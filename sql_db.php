@@ -22,6 +22,21 @@ $sql = "CREATE TABLE IF NOT EXISTS products (
   image_path VARCHAR(50) NOT NULL
   )";
 $conn->query($sql);
+$sql = "CREATE TABLE IF NOT EXISTS userInfo (
+  first_name VARCHAR (50) NOT NULL,
+  last_name VARCHAR (50) NOT NULL,
+  username VARCHAR (50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  pass_word VARCHAR(50) NOT NULL
+  )";
+$conn->query($sql);
+  //Login Info
+$sql = "CREATE TABLE IF NOT EXISTS loginInfo (
+  username VARCHAR(50) NOT NULL,
+  pass_word VARCHAR(50) NOT NULL
+  )";
+echo "<br>";
+$conn->query($sql);
 
 $sql = "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
 VALUES ('white', 'copy', '10.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperWhite.png');";
@@ -77,27 +92,7 @@ VALUES ('blue', 'origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiB
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
 VALUES ('pink', 'origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiPink.png');";
 
-if ($conn->multi_query($sql) === TRUE) {
-  echo "New records created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-//idk 
-  //User Info
-$sql = "CREATE TABLE IF NOT EXISTS userInfo (
-  first_name VARCHAR (50) NOT NULL,
-  last_name VARCHAR (50) NOT NULL,
-  username VARCHAR (50) NOT NULL,
-  email VARCHAR(50) NOT NULL,
-  pass_word VARCHAR(50) NOT NULL
-  )";
-$conn->query($sql);
-  //Login Info
-$sql = "CREATE TABLE IF NOT EXISTS loginInfo (
-  username VARCHAR(50) NOT NULL,
-  pass_word VARCHAR(50) NOT NULL
-  )";
-$conn->query($sql);
+$conn->multi_query($sql);
 
 $conn->close();
 ?>
