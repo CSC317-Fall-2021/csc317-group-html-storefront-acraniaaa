@@ -39,58 +39,58 @@ echo "<br>";
 $conn->query($sql);
 
 $sql = "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('white', 'copy', '10.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperWhite.png');";
+VALUES ('White', 'Copy', '10.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperWhite.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('yellow', 'copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperYellow.png');";
+VALUES ('Yellow', 'Copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperYellow.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('red', 'copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperRed.png');";
+VALUES ('Red', 'Copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperRed.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('purple', 'copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperPurple.png');";
+VALUES ('Purple', 'Copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperPurple.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('blue', 'copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperBlue.png');";
+VALUES ('Blue', 'Copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperBlue.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('pink', 'copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperPink.png');";
+VALUES ('Pink', 'Copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperPink.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('white', 'craft', '33.99', '48in. x 200ft.', '1 Roll', 'Images/craftWhite.jpg');";
+VALUES ('White', 'Kraft', '33.99', '48in. x 200ft.', '1 Roll', 'Images/craftWhite.jpg');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('yellow', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftYellow.png');";
+VALUES ('Yellow', 'Kraft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftYellow.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('red', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftRed.png');";
+VALUES ('Red', 'Kraft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftRed.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('purple', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftPurple.png');";
+VALUES ('Purple', 'Kraft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftPurple.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('blue', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftBlue.png');";
+VALUES ('Blue', 'Kraft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftBlue.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('pink', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftPink.png');";
+VALUES ('Pink', 'Kraft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftPink.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('white', 'origami', '6.99', '3in. x 3in.', '100 Sheets', 'Images/origamiWhite.png');";
+VALUES ('White', 'Origami', '6.99', '3in. x 3in.', '100 Sheets', 'Images/origamiWhite.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('yellow', 'origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiYellow.png');";
+VALUES ('Yellow', 'Origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiYellow.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('red', 'origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiRed.png');";
+VALUES ('Red', 'Origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiRed.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('purple', 'origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiPurple.png');";
+VALUES ('Purple', 'Origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiPurple.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('blue', 'origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiBlue.png');";
+VALUES ('Blue', 'Origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiBlue.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('pink', 'origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiPink.png');";
+VALUES ('Pink', 'Origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiPink.png');";
 
 $conn->multi_query($sql);
 

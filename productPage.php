@@ -31,7 +31,7 @@
             $sql = "SELECT image_path FROM products WHERE id=1";
             $img = $conn->query($sql);
             $row = $img -> fetch_assoc();
-            echo "<img width='400' height='400' src='".$row['image_path']."'>";
+            echo "<img id='product' width='400' height='400' src='".$row['image_path']."'>";
             $conn->close();
           ?>
         </div>
