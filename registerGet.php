@@ -1,5 +1,5 @@
 <?php
-    //$conn = new mysqli('localhost', 'user', 'password', 'main');
+    $conn = new mysqli('localhost', 'user', 'password', 'main');
 
         $FIRSTNAME = $_GET['FirstName'];
         $LASTNAME = $_GET['LastName'];
