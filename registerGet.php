@@ -22,6 +22,7 @@
 
                 echo('Passwords do not match');
 
+                
               } else {
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)
