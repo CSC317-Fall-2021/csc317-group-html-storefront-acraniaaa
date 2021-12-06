@@ -10,16 +10,14 @@
         $USERNAME = $_GET['user'];
         $PASSWORD = $_GET['Password'];
 
-        $sql = "SELECT username FROM userInfo WHERE username='{$USERNAME}'";
-        $result = mysqli_query($con,$sql) or die("Username Error") ;
-              if (mysqli_num_rows($result) > 0) {
-                echo "Username already exists";
+        $check_username = mysqli_query($conn, "SELECT username FROM userInfo where username = '$USERNAME' ");
+              if(mysqli_num_rows($check_username) > 0){
+                  echo('Username Already exists');
               }
-
-        $sql = "SELECT email FROM userInfo WHERE email='{$EMAIL}'";
-        $result = mysqli_query($con,$sql) or die("Email  Error") ;
-              if (mysqli_num_rows($result) > 0) {
-                echo "Username already exists";
+             
+        $check_email = mysqli_query($conn, "SELECT email FROM userInfo where email = '$EMAIL' ");
+              if(mysqli_num_rows($check_email) > 0){
+                  echo('Email Already exists');
               }
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)
