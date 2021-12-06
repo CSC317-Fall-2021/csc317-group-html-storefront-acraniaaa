@@ -7,7 +7,7 @@
         $USERNAME = $_GET['user'];
         $EMAIL = $_GET['email'];
 
-        $USERNAME = $_GET['username'];
+        $USERNAME = $_GET['user'];
         $PASSWORD = $_GET['Password'];
 
         $sql = "SELECT username
@@ -28,7 +28,7 @@
                   } else {
                     echo "Error creating database: " . $conn->error;
                   }
-                  
+
         $sql = "INSERT INTO loginInfo (username, pass_word)
                 VALUES ('$USERNAME', '$PASSWORD');";
 
