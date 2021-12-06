@@ -18,7 +18,7 @@
               if((mysqli_num_rows($check_username) > 0) || (mysqli_num_rows($check_email) > 0)){
                 echo('Username or Email already exist');
 
-              } else if ($_POST["Password"] === $_POST["ConfPassword"]) {
+              } else if ($PASSWORD == $PASSWORD) {
                 echo('Passwords match');
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)
