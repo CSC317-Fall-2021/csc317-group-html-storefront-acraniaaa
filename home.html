@@ -5,11 +5,11 @@
 
 <link href = "StyleSheet.css" rel = "stylesheet">
 <link href = "CheckoutStyleSheet.css" rel = "stylesheet">
-
+<link href = "carousel.css" rel = "stylesheet">
 
 </head>
 
-<body>
+<body class = "body" id = "navbar">
 <div class = "nav">
 	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
 	<a class = "leftNav" href="home.html"> HOME</a>
@@ -25,7 +25,7 @@
 		border-box;"></form>
 </div>
 
-<img src="Images/Header_Image.png" width="101%">
+<img class = "img" src="Images/Header_Image.png" width="101%">
 <center>
    <table>
 	<tr>
@@ -42,21 +42,76 @@
 	</tr>
    </table>
 
-<br><br><br>
 <h2>FEATURED PRODUCTS</h2>
-<br><br>
-<table>
-	<td>
-		<tr><a href="paperBlue.html"><img src = "Images/paperBlue.png"
-	width = "200" height = "200"></a></tr>
-		<tr><a href="paperPink.html"><img src = "Images/paperPink.png"
-	width = "200" height = "200"></a></tr>
-		<tr><a href="paperYellow.html"><img src = "Images/paperYellow.png"
-	width = "200" height = "200"></a></tr>
-		<tr><a href="paperRed.html"><img src = "Images/paperRed.png"
-	width = "200" height = "200"></a></tr>
-	</td>
-</table>
+<br><br><br>
+
+<div class="slider">
+      <div class='carousel'>
+        <input checked='checked' class='sections' id='section1' name='carousel' type='radio'>
+        <input class='sections' id='section2' name='carousel' type='radio'>
+        <input class='sections' id='section3' name='carousel' type='radio'>
+        <div class='controls'>
+          <label class='controlLooks' for='section2'>
+            ]
+          </label>
+        </div>
+        <div class='controls'>
+          <label class='controlLooks' for='section1'>
+            [
+          </label>
+          <label class='controlLooks' for='section3'>
+            ]
+          </label>
+        </div>
+        <div class='controls'>
+          <label class='controlLooks' for='section2'>
+            [
+          </label>
+        </div>
+        <div class='visible'>
+          <div class='transition'>
+            <div class= "item item3">
+              <div class= "slider">
+                <img src = "Images/paperBlue.png" width = "250" height = "250">
+              </div>
+            </div>
+            <div class= "item item3">
+              <div class= "slider">
+                <img src = "Images/paperRed.png" width = "250" height = "250">
+              </div>
+            </div>
+            <div class= "item item3">
+              <div class="slider">
+                <img src = "Images/paperYellow.png" width = "250" height = "250">
+              </div>
+            </div>
+            <div class= "item item3">
+              <div class= "slider">
+                <img src = "Images/paperBlue.png" width = "250" height = "250">
+              </div>
+            </div>
+            <div class= "item item3">
+              <div class= "slider">
+                <img src = "Images/paperRed.png" width = "250" height = "250">
+              </div>
+            </div>
+            <div class= "item item3">
+              <div class= "slider">
+                <img src = "Images/paperYellow.png" width = "250" height = "250">
+              </div>
+            </div>
+            <div class= "item item3">
+              <div class= "slider">
+                <img src = "Images/paperBlue.png" width = "250" height = "250">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<br><br><br><br><br>
+<script src = "EJS.js"></script>
 </center>
 </body>
 
