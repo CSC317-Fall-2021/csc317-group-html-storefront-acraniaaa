@@ -73,7 +73,21 @@
             $row = $result -> fetch_assoc();
             echo "<b>Price: $".$row['product_price']."</b><br><br>";
           ?>
+      <form method="post">
           <input type="button" id="product-button-buy" value="Add to Cart">
+      </form>
+      <?php
+        if(array_key_exists('product-button-buy', $_POST)) {
+            addToCartButton();
+        }
+        function addToCartButton() {
+
+          $cookie_name = ;
+          $cookie_value = "John Doe";
+          setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
+        }
+        ?>
         </div>
         <div id="similar-products-title">
           <b>Similar Products</b>
