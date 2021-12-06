@@ -13,12 +13,13 @@
         $check_username = mysqli_query($conn, "SELECT username FROM userInfo where username = '$USERNAME' ");
               if(mysqli_num_rows($check_username) > 0){
                   echo('Username Already exists');
+
               }
              
         $check_email = mysqli_query($conn, "SELECT email FROM userInfo where email = '$EMAIL' ");
               if(mysqli_num_rows($check_email) > 0){
                   echo('Email Already exists');
-              }
+              } else {
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)
                 VALUES ('$FIRSTNAME', '$LASTNAME', '$USERNAME', '$EMAIL', '$PASSWORD');";
@@ -37,6 +38,6 @@
                   } else {
                     echo "Error creating database: " . $conn->error;
                   }
-    
+                }
     $conn->close();
 ?>
