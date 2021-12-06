@@ -32,10 +32,19 @@
     <div class="cart">
         <div class="products">
 
-           <div class="product">
-             <img src="Images/paperBlue.png">
+
+        <?php
+
+            $sql="SELECT color, product_type, product_size, product_size, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+
+
+         echo  "<div class='product'>
+             <img src= .row['image_path'].>
              <div class="product-info">
-                <h3 class="product-name">Blue Paper</h3>
+                <h3 class="product-name">.row['color'].</h3>
                 <h4 class="product-price">$9.99</h4>
                 <h4 class="product-offer"></h4>
                 <p class="product-quantity">Qnt:<input value="1" name="">
@@ -44,37 +53,11 @@
                    <span class="remove">Remove</span>
                 </p>
              </div>
-           </div>
+           </div>"
+           ?>
 
 
-<div class="product">
-             <img src="Images/paperYellow.png">
-             <div class="product-info">
-                <h3 class="product-name">Yellow Paper</h3>
-                <h4 class="product-price">$9.99</h4>
-                <h4 class="product-offer"></h4>
-                <p class="product-quantity">Qnt:<input value="1" name="">
-                <p class="product-remove">
-                   <i class="fa fa-trash" aria-hidden="true"></i>
-                   <span class="remove">Remove</span>
-                </p>
-             </div>
-           </div>
 
-
-<div class="product">
-             <img src="Images/paperPink.png">
-             <div class="product-info">
-                <h3 class="product-name">Pink Paper</h3>
-                <h4 class="product-price">$9.99</h4>
-                <h4 class="product-offer"></h4>
-                <p class="product-quantity">Qnt: <input value="1" name="">
-                <p class="product-remove">
-                   <i class="fa fa-trash" aria-hidden="true"></i>
-                   <span class="remove">Remove</span>
-                </p>
-             </div>
-           </div>
           </div>
         <div class="cart-total">
             <p>
