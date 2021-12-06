@@ -18,12 +18,8 @@
               if((mysqli_num_rows($check_username) > 0) || (mysqli_num_rows($check_email) > 0)){
                 echo('Username or Email already exist');
 
-              } else if ($_POST['password'] !== $_POST['ConfPassword']) {     
-
-                echo('Passwords do not match');
-
-                
-              } else {
+              } else if ($_POST["Password"] === $_POST["ConfPassword"]) {
+                echo('Passwords match');
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)
                 VALUES ('$FIRSTNAME', '$LASTNAME', '$USERNAME', '$EMAIL', '$PASSWORD');";
@@ -43,5 +39,13 @@
                     echo "Error creating database: " . $conn->error;
                   }
                 }
+
+             
+             else {
+                echo('passwords do not match');
+             }
+      
+
+
     $conn->close();
 ?>
