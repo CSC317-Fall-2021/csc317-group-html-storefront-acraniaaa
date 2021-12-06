@@ -10,8 +10,14 @@
         $USERNAME = $_GET['user'];
         $PASSWORD = $_GET['Password'];
 
-        $sql = "SELECT username FROM table_name WHERE username='{$USERNAME}'";
-        $result = mysqli_query($con,$sql) or die("Query unsuccessful") ;
+        $sql = "SELECT username FROM userInfo WHERE username='{$USERNAME}'";
+        $result = mysqli_query($con,$sql) or die("Username Error") ;
+              if (mysqli_num_rows($result) > 0) {
+                echo "Username already exists";
+              }
+
+        $sql = "SELECT email FROM userInfo WHERE email='{$EMAIL}'";
+        $result = mysqli_query($con,$sql) or die("Email  Error") ;
               if (mysqli_num_rows($result) > 0) {
                 echo "Username already exists";
               }
