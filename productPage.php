@@ -72,21 +72,22 @@
             $row = $result -> fetch_assoc();
             echo "<b>Price: $".$row['product_price']."</b><br><br>";
           ?>
+          
           <form method="post">
           <input type="button" id="product-button-buy" value="Add to Cart">
-          </form>
-          <?php
-            if(array_key_exists('product-button-buy', $_POST)) {
-              addToCartButton();
-            }
-          function addToCartButton() {
-            //maybe
-            $cookie_name = $_SESSION['product_id'];
-            $cookie_value = "John Doe";
-            setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+      </form>
+      <?php
+        if(array_key_exists('product-button-buy', $_POST)) {
+            addToCartButton();
+        }
+        function addToCartButton() {
 
-          }
-          ?>
+          $cookie_name = $_SESSION['product_id'];
+          $cookie_value = "John Doe";
+          setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
+        }
+        ?>
         </div>
         <div id="similar-products-title">
           <b>Other Products</b>
@@ -95,10 +96,10 @@
           <div id = "product-one">
             <?php
               $sid = rand(1,18);
-              $sql = "SELECT color, product_type, image_path FROM products WHERE id=$sid";
+              $sql = "SELECT * FROM products WHERE id=$sid";
               $result = $conn -> query($sql);
               $row = $result -> fetch_assoc();
-              echo "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
+              echo "<a href = 'redirect.php?product_id=".$row['id']."'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
               <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>";             
             ?>
           </div>
@@ -113,10 +114,10 @@
                   break;
                 }
               }
-              $sql = "SELECT color, product_type, image_path FROM products WHERE id=$sid";
+              $sql = "SELECT * FROM products WHERE id=$sid";
               $result = $conn -> query($sql);
               $row = $result -> fetch_assoc();
-              echo "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
+              echo "<a href = 'redirect.php?product_id=".$row['id']."'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
               <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>";
             ?>
           </div>
@@ -131,10 +132,10 @@
                   break;
                 }
               }
-              $sql = "SELECT color, product_type, image_path FROM products WHERE id=$sid";
+              $sql = "SELECT * FROM products WHERE id=$sid";
               $result = $conn -> query($sql);
               $row = $result -> fetch_assoc();
-              echo "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
+              echo "<a href = 'redirect.php?product_id=".$row['id']."'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
               <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>";             
               $conn->close(); 
             ?>
