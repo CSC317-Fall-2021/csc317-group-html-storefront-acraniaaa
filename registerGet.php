@@ -10,15 +10,11 @@
         $USERNAME = $_GET['user'];
         $PASSWORD = $_GET['Password'];
 
-        $sql = "SELECT username
-                FROM userInfo
-                WHERE EXISTS (SELECT username FROM userInfo WHERE username = '$USERNAME');";
-        $conn->query($sql);
-
-        $sql = "SELECT email
-                FROM userInfo
-                WHERE EXISTS (SELECT email FROM userInfo WHERE email = '$EMAIL');";
-        $conn->query($sql);
+        $sql = "SELECT username FROM table_name WHERE username='{$USERNAME}'";
+        $result = mysqli_query($con,$sql) or die("Query unsuccessful") ;
+              if (mysqli_num_rows($result) > 0) {
+                echo "Username already exists";
+              }
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)
                 VALUES ('$FIRSTNAME', '$LASTNAME', '$USERNAME', '$EMAIL', '$PASSWORD');";
