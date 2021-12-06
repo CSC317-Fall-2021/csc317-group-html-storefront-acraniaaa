@@ -9,6 +9,10 @@
 #product {
   padding-left: 30px;
 }
+
+.image {
+  border: 1px groove rgb(180, 180, 180);
+}
 #product-image {
   border-radius: 10px;
   margin: 10px;

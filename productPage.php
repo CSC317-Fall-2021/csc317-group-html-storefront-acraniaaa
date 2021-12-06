@@ -28,57 +28,82 @@
         <div id = "product-image">
           <?php
             $conn = new mysqli("localhost", "user", "password", "main");
-            $sql = "SELECT image_path FROM products WHERE id=1";
-            $img = $conn->query($sql);
-            $row = $img -> fetch_assoc();
-            echo "<img id='product' width='400' height='400' src='".$row['image_path']."'>";
-            $conn->close();
+            $id = 8;
+            $sql = "SELECT image_path, product_type FROM products WHERE id=$id";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+            $type = $row['product_type'];
+            echo "<img class='image' width='400' height='400' src='".$row['image_path']."'>";
+
           ?>
         </div>
         <div id = "product-name">
-          <h2>Copy Paper: 8.5<q>x11</q> White</h2>
+          <?php
+          $sql = "SELECT color, product_type, product_size FROM products WHERE id=$id";
+          $result = $conn->query($sql);
+          $row = $result -> fetch_assoc();
+          echo "<h2>".$row['product_type']." Paper: ".$row['product_size']." ".$row['color']."</h2>";
+          ?>
         </div>
         <div id = "product-desc">
           <p id = "paragraph-title"><b>Product Description</b></p>
           <ul id = "product-desc-list">
-            <li>8.5<q>x11</q></li>
-            <li>92 TAPPI Brightness</li>
-            <li>2 Reams</li>
-            <li>White</li>
+            <?php
+            $sql = "SELECT product_size, product_quantity, color FROM products WHERE id=$id";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+            echo "<li>".$row['product_size']."</li>
+            <li>".$row['product_quantity']."</li>
+            <li>".$row['color']."</li>";
+            ?>
           </ul>
-
-                <p><b>DUNDER MIFFLIN COPY PAPER</b>:Dunder Mifflin White 8.5<q>x11</q> printer and copying paper
-          works as hard as you do. This dependable, everyday copy paper runs great through all types of equipment.
-          <br><b>100% Recycled Paper!</b><br><b>99.92% Jam Free-Guarantee!</b></p>
+          <?php
+            $sql="SELECT color, product_type, product_size FROM products WHERE id=$id";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+            echo "<br><p><b>Dunder Mifflin ".$row['product_type']." Paper</b>:Dunder Mifflin ".$row['color']." ".$row['product_size']." ".$row['product_type']." paper
+            works as hard as you do. This dependable, everyday ".$row['product_type']." paper runs great through all types of equipment.
+            <br><b>100% Recycled Paper!</b><br><b>99.92% Jam Free-Guarantee!</b></p>";
+          ?>
         </div>
         <div class = "product-buy">
-            <b>Price: $9.99</b><br><br>
-            <input type="button" id="product-button-buy" value="Add to Cart">
+          <?php
+            $sql="SELECT product_price FROM products WHERE id=$id";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+            echo "<b>Price: $".$row['product_price']."</b><br><br>";
+          ?>
+          <input type="button" id="product-button-buy" value="Add to Cart">
         </div>
         <div id="similar-products-title">
           <b>Similar Products</b>
         </div>
         <div class = "similar-products"></div>
           <div id = "product-one">
-            <a href = "paperPurple.html"><img width = "200" height = "200" src = "Images/paperPurple.png"></a>
-            <br><h4>Purple Paper</h4>
+            <?php
+              $sql = "SELECT id, color, product_type, image_path FROM products WHERE product_type='$type'";
+              $result = $conn -> query($sql);
+              if ($conn->query($sql) === TRUE) {
+                echo "Database created successfully";
+              } else {
+                echo "Error creating database: " . $conn->error;
+              }
+              $similar = array();
+              while($row = $result -> fetch_assoc()) {
+                array_push($similar, "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."></a>
+                <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>");
+              }
+              echo "Test" .$similar;
+              $conn->close;
+            ?>
           </div>
           <div id = "product-two">
-            <a href = "paperBlue.html"><img width = "200" height = "200" src = "Images/paperBlue.png"></a>
+            <a href = "paperBlue.html"><img class='image' width = "200" height = "200" src = "Images/paperBlue.png"></a>
             <br><h4>Blue Paper</h4>
           </div>
           <div id = "product-three">
-            <a href = "paperYellow.html"><img width = "200" height = "200" src = "Images/paperYellow.png"></a>
+            <a href = "paperYellow.html"><img class='image' width = "200" height = "200" src = "Images/paperYellow.png"></a>
             <br><h4>Yellow Paper</h4>
           </div>
       </div>
     </font>
-
-
-
-  </body>
-  <footer class="footer">
-
-  </footer>
-
-</html>
