@@ -82,9 +82,7 @@
         }
         function addToCartButton() {
 
-            $i = 0;
-
-          $cookie_name = $i+1;
+          $cookie_name = $_SESSION['product_id'];
           $cookie_value = $_SESSION['product_id'];
           setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 
