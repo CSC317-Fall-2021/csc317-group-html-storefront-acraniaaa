@@ -11,7 +11,7 @@
     <div class = "nav">
 	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
 	<a class = "leftNav" href="index.html"> HOME</a>
-	<a class = "leftNav" href="products.html"> PAPER</a>
+	<a class = "leftNav" href="products.php"> PAPER</a>
 	<a class = "leftNav" href="about.html"> ABOUT</a>
 	<a class = "leftNav" href="FAQ.html"> FAQ</a>
 	<a class = "rightNav" href = "login.html">LOG IN</a>
@@ -27,14 +27,13 @@
       <div class = "grid-container">
         <div id = "product-image">
           <?php
+            session_start();
             $conn = new mysqli("localhost", "user", "password", "main");
-            $id = 8;
-            $sql = "SELECT image_path, product_type FROM products WHERE id=$id";
+            $id = $_SESSION['product_id'];
+            $sql = "SELECT image_path FROM products WHERE id=$id";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
-            $type = $row['product_type'];
             echo "<img class='image' width='400' height='400' src='".$row['image_path']."'>";
-
           ?>
         </div>
         <div id = "product-name">
@@ -73,51 +72,81 @@
             $row = $result -> fetch_assoc();
             echo "<b>Price: $".$row['product_price']."</b><br><br>";
           ?>
-      <form method="post">
+          <form method="post">
           <input type="button" id="product-button-buy" value="Add to Cart">
-      </form>
-      <?php
-        if(array_key_exists('product-button-buy', $_POST)) {
-            addToCartButton();
-        }
-        function addToCartButton() {
+          </form>
+          <?php
+            if(array_key_exists('product-button-buy', $_POST)) {
+              addToCartButton();
+            }
+          function addToCartButton() {
+            //maybe
+            $cookie_name = $_SESSION['product_id'];
+            $cookie_value = "John Doe";
+            setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 
-          $cookie_name = ;
-          $cookie_value = "John Doe";
-          setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
-
-        }
-        ?>
+          }
+          ?>
         </div>
         <div id="similar-products-title">
-          <b>Similar Products</b>
+          <b>Other Products</b>
         </div>
         <div class = "similar-products"></div>
           <div id = "product-one">
             <?php
-              $sql = "SELECT id, color, product_type, image_path FROM products WHERE product_type='$type'";
+              $sid = rand(1,18);
+              $sql = "SELECT color, product_type, image_path FROM products WHERE id=$sid";
               $result = $conn -> query($sql);
-              if ($conn->query($sql) === TRUE) {
-                echo "Database created successfully";
-              } else {
-                echo "Error creating database: " . $conn->error;
-              }
-              $similar = array();
-              while($row = $result -> fetch_assoc()) {
-                array_push($similar, "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."></a>
-                <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>");
-              }
-              echo "Test" .$similar;
-              $conn->close;
+              $row = $result -> fetch_assoc();
+              echo "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
+              <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>";             
             ?>
           </div>
           <div id = "product-two">
-            <a href = "paperBlue.html"><img class='image' width = "200" height = "200" src = "Images/paperBlue.png"></a>
-            <br><h4>Blue Paper</h4>
+          <?php
+              while(true) {
+                $cond = rand(1,18);
+                if($cond === $sid) {
+                  continue;
+                } else {
+                  $sid = $cond;
+                  break;
+                }
+              }
+              $sql = "SELECT color, product_type, image_path FROM products WHERE id=$sid";
+              $result = $conn -> query($sql);
+              $row = $result -> fetch_assoc();
+              echo "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
+              <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>";
+            ?>
           </div>
           <div id = "product-three">
-            <a href = "paperYellow.html"><img class='image' width = "200" height = "200" src = "Images/paperYellow.png"></a>
-            <br><h4>Yellow Paper</h4>
+          <?php
+              while(true) {
+                $cond = rand(1,18);
+                if($cond === $sid) {
+                  continue;
+                } else {
+                  $sid = $cond;
+                  break;
+                }
+              }
+              $sql = "SELECT color, product_type, image_path FROM products WHERE id=$sid";
+              $result = $conn -> query($sql);
+              $row = $result -> fetch_assoc();
+              echo "<a href = 'productPage.php'><img class='image' width = '200' height = '200' src = '".$row['image_path']."'></a>
+              <br><h4>".$row['color']." ".$row['product_type']." Paper</h4>";             
+              $conn->close(); 
+            ?>
           </div>
       </div>
     </font>
+
+
+
+  </body>
+  <footer class="footer">
+
+  </footer>
+
+</html>
