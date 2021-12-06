@@ -57,10 +57,10 @@ $sql .= "INSERT INTO products (color, product_type, product_price, product_size,
 VALUES ('pink', 'copy', '12.99', '8.5in. x 11in.', '500 Sheets', 'Images/paperPink.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('white', 'craft', '33.99', '48in. x 200ft.', '1 Roll', 'Images/craftWhite.png');";
+VALUES ('white', 'craft', '33.99', '48in. x 200ft.', '1 Roll', 'Images/craftWhite.jpg');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
-VALUES ('yellow', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftWhite.jpg');";
+VALUES ('yellow', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftYellow.png');";
 
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
 VALUES ('red', 'craft', '35.99', '48in. x 200ft.', '1 Roll', 'Images/craftRed.png');";

@@ -26,7 +26,14 @@
     <font face = "Times New Roman">
       <div class = "grid-container">
         <div id = "product-image">
-          <img width="400" height = "400" src = "Images/PaperWhite.png">
+          <?php
+            $conn = new mysqli("localhost", "user", "password", "main");
+            $sql = "SELECT image_path FROM products WHERE id=1";
+            $img = $conn->query($sql);
+            $row = $img -> fetch_assoc();
+            echo "<img width='400' height='400' src='".$row['image_path']."'>";
+            $conn->close();
+          ?>
         </div>
         <div id = "product-name">
           <h2>Copy Paper: 8.5<q>x11</q> White</h2>
