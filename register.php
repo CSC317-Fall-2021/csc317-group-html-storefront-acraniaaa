@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dunder Mifflin</title>
+<title>Register | Dunder Mifflin</title>
 
 <link href = "StyleSheet.css" rel = "stylesheet">
 <link href = "CheckoutStyleSheet.css" rel = "stylesheet">
@@ -57,14 +57,14 @@
         <input type="password" name="ConfPassword" placeholder="Confirm Password" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
 
         <input type="checkbox" id="TOS" name="agree" value="TOS" required>
-        <label for="TOS"> I agree to the <br><a href="DMTOS.html">TERMS OF SERVICE</a></label><br>
+        <label for="TOS"> I agree to the <br><a href="DMTOS.php">TERMS OF SERVICE</a></label><br>
 <br>
         <input type="submit" value="REGISTER" style="background-color: #036ba8;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 200px;">
 
       </form>
   </div>
         <br>Already have an account?
-        <br><a href="Login.html">LOGIN</a>
+        <br><a href="Login.php">LOGIN</a>
 
       </td>
 
