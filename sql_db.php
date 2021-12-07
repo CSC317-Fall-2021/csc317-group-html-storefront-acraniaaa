@@ -92,6 +92,9 @@ VALUES ('Blue', 'Origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiB
 $sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
 VALUES ('Pink', 'Origami', '7.99', '3in. x 3in.', '100 Sheets', 'Images/origamiPink.png');";
 
+$sql .= "INSERT INTO products (color, product_type, product_price, product_size, product_quantity, image_path)
+VALUES ('White', 'Special Copy', '39.99', '8.5in. x 11in.', '5000 Sheets', 'Images/PaperCASE.png');";
+
 $conn->multi_query($sql);
 
 $conn->close();
