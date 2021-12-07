@@ -17,6 +17,7 @@
 
               if((mysqli_num_rows($check_username) > 0) || (mysqli_num_rows($check_email) > 0)){
                 echo('Username or Email already exist');
+                echo mysqli_num_rows($check_username);
 
               } else if ($PASSWORD == $PASSWORD) {
                 echo('Passwords match');
