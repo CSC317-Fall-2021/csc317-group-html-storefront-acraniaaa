@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dunder Mifflin</title>
+<title>Register | Dunder Mifflin</title>
 
 <link href = "StyleSheet.css" rel = "stylesheet">
 <link href = "CheckoutStyleSheet.css" rel = "stylesheet">
@@ -12,13 +12,13 @@
 <body class = "body">
 <div class = "nav">
 	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
-	<a class = "leftNav" href="home.html"> HOME</a>
-	<a class = "leftNav" href="products.html"> PAPER</a>
-	<a class = "leftNav" href="about.html"> ABOUT</a>
-	<a class = "leftNav" href="FAQ.html"> FAQ</a>
+	<a class = "leftNav" href="home.php"> HOME</a>
+	<a class = "leftNav" href="products.php"> PAPER</a>
+	<a class = "leftNav" href="about.php"> ABOUT</a>
+	<a class = "leftNav" href="FAQ.php"> FAQ</a>
 
 
-	<a class = "rightNav" href = "login.html">
+	<a class = "rightNav" href = "login.php">
     
   <?php
   session_start();
@@ -31,7 +31,7 @@
 
   </a>
 
-	<a class = "rightNav" href = "cart.html"><img class = "rightImg" width = "30" 
+	<a class = "rightNav" href = "cart.php"><img class = "rightImg" width = "30" 
 		height = "30" src = "Images/cart_icon.png"></a>
 </div>
 
@@ -57,14 +57,14 @@
         <input type="password" name="ConfPassword" placeholder="Confirm Password" required style="width: 200px;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;"><br>
 
         <input type="checkbox" id="TOS" name="agree" value="TOS" required>
-        <label for="TOS"> I agree to the <br><a href="DMTOS.html">TERMS OF SERVICE</a></label><br>
+        <label for="TOS"> I agree to the <br><a href="DMTOS.php">TERMS OF SERVICE</a></label><br>
 <br>
         <input type="submit" value="REGISTER" style="background-color: #036ba8;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 200px;">
 
       </form>
   </div>
         <br>Already have an account?
-        <br><a href="Login.html">LOGIN</a>
+        <br><a href="Login.php">LOGIN</a>
 
       </td>
 
