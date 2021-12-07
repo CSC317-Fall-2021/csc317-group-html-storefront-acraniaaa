@@ -49,7 +49,7 @@
              }
       
 
-             header("Location: home.php");
+             header("Location: register.php");
 
     $conn->close();
 ?>

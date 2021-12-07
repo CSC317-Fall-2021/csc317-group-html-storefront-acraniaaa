@@ -27,6 +27,6 @@
                     }
 
             } 
-            header("Location: home.php");
+            header("Location: login.php");
     $conn->close();
 ?>
