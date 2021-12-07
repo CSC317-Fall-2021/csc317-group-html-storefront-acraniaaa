@@ -82,21 +82,59 @@
             $row = $result -> fetch_assoc();
             echo "<b>Price: $".$row['product_price']."</b><br><br>";
           ?>
+
+          <?php
           
-          <form method="post">
-          <input type="button" id="product-button-buy" value="Add to Cart">
-      </form>
-      <?php
-        if(array_key_exists('product-button-buy', $_POST)) {
-            addToCartButton();
-        }
-        function addToCartButton() {
+          $_SESSION['Item1'] = 0;   
+          $_SESSION['Item2'] = 0;
+          $_SESSION['Item3'] = 0;
+          $_SESSION['Item4'] = 0;
+          $_SESSION['Item5'] = 0;
+          $_SESSION['Item6'] = 0;
+          $_SESSION['Item7'] = 0;
+          $_SESSION['Item8'] = 0;
+          $_SESSION['Item9'] = 0;
+          $_SESSION['Item10'] = 0;
+          $_SESSION['Item11'] = 0;
+          $_SESSION['Item12'] = 0;
+          $_SESSION['Item13'] = 0;
+          $_SESSION['Item14'] = 0;
+          $_SESSION['Item15'] = 0;
+          $_SESSION['Item16'] = 0;
+          $_SESSION['Item17'] = 0;
+          $_SESSION['Item18'] = 0;
 
-          $cookie_name = $_SESSION['product_id'];
-          $cookie_value = $_SESSION['product_id'];
-          setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
-
-        }
+          ?>
+          
+          <form action="productPage.php" method="post">
+          <input type="submit" name="atc" value="Add to Cart">
+          </form>
+          
+          <?php
+            if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['atc'])){       
+              func();
+            }
+            function func(){
+              $_SESSION['Item' + $_SESSION['product_id']] = 'IT WORKS!';  
+              echo $_SESSION['Item1'];
+              echo $_SESSION['Item2'];
+              echo $_SESSION['Item3'];
+              echo $_SESSION['Item4'];
+              echo $_SESSION['Item5'];
+              echo $_SESSION['Item6'];
+              echo $_SESSION['Item7'];
+              echo $_SESSION['Item8'];
+              echo $_SESSION['Item9'];
+              echo $_SESSION['Item10'];
+              echo $_SESSION['Item11'];
+              echo $_SESSION['Item12'];
+              echo $_SESSION['Item13'];
+              echo $_SESSION['Item14'];
+              echo $_SESSION['Item15'];
+              echo $_SESSION['Item16'];
+              echo $_SESSION['Item17'];
+              echo $_SESSION['Item18'];
+            }
         ?>
         </div>
         <div id="similar-products-title">
