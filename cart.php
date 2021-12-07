@@ -153,7 +153,7 @@
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <form action='cart.php' method='post'>
                      <input type 'submit' class='remove' name='remove2' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form>
                   </p>
                </div>
             </div>";
