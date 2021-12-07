@@ -103,11 +103,12 @@
           $_SESSION['Item16'] = 0;
           $_SESSION['Item17'] = 0;
           $_SESSION['Item18'] = 0;
+          $_SESSION['Item19'] = 0;
 
           ?>
           
           <form action="productPage.php" method="post">
-          <input type="submit" name="atc" value="Add to Cart">
+          <input type="submit" id="product-button-buy" name="atc" value="Add to Cart">
           </form>
           
           <?php
@@ -152,10 +153,12 @@
                 $_SESSION['Item17'] = 1;
               } else if($_SESSION['product_id'] == 18){
                 $_SESSION['Item18'] = 1;
+              } else if($_SESSION['product_id'] == 19){
+                $_SESSION['Item19'] = 1;
               }
 
             }
-            
+
         ?>
         </div>
         <div id="similar-products-title">

@@ -44,19 +44,25 @@
 
 
         <?php
+
+         $_SESSION['subtotal'] = 0;
+
          if($_SESSION['Item1'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(1)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -64,19 +70,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[2])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item2'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(2)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -84,19 +94,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[3])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item3'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(3)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -104,19 +118,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[4])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item4'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(4)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -124,19 +142,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[5])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item5'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(5)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -144,19 +166,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[6])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item6'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(6)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -164,19 +190,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[7])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item7'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(7)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -184,19 +214,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[8])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 8){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(8)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -204,19 +238,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[9])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item9'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(9)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -224,19 +262,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[10])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item10'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(10)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -244,19 +286,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[11])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item11'] == 1){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(11)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -264,19 +310,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[12])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 12){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(12)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -284,19 +334,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[13])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 13){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(13)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -304,19 +358,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[14])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 14){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(14)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -324,19 +382,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[15])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 15){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(15)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -344,19 +406,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[16])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 16){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(16)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -364,19 +430,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[17])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 17){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(17)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -384,19 +454,23 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE[18])){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+         if($_SESSION['Item1'] == 18){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(18)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
@@ -405,6 +479,31 @@
             </div>";
          }
 
+         if($_SESSION['Item1'] == 19){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(19)";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+            $price = floatval($row['product_price']);
+
+            $_SESSION['subtotal'] += $price;
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+
+         
            ?>
 
 
@@ -413,15 +512,24 @@
         <div class="cart-total">
             <p>
                 <span>Subtotal</span>
-                <span>$29.97</span>
+                <span><?php echo '$' + strvar($_SESSION['subtotal']);
+                 ?></span>
             </p>
             <p>
                 <span>Tax (8.5%)</span>
-                <span>$2.55</span>
+                <span><?php 
+                $tax = ($_SESSION['subtotal'] * 0.085);
+                echo '$' + strvar($tax);
+                ?></span>
             </p>
             <p>
                <span>Total</span>
-               <span>$32.52</span>
+               <span>
+                  <?php
+                     $total =  ($tax + $_SESSION['subtotal']);
+                     echo '$' + strvar($total);
+                  ?>   
+               </span>
            </p>
             <a href="paymentinfo.html">Proceed to Checkout</a>
     </div>
