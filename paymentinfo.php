@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dunder Mifflin</title>
+<title>Dunder Mifflin | PAYMENT</title>
 
 <link href = "StyleSheet.css" rel = "stylesheet">
 <link href = "CheckoutStyleSheet.css" rel = "stylesheet">
