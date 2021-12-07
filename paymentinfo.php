@@ -101,20 +101,29 @@
 
 
   <div class="cart-total">
-    <p>
-        <span>Subtotal</span>
-        <span>$29.97</span>
-    </p>
-    <p>
-        <span>Tax (8.5%)</span>
-        <span>$2.55</span>
-    </p>
-    <p>
-       <span>Total</span>
-       <span>$32.52</span>
-   </p>
-    <a>Proceed to Purchase</a>
-</div>
+            <p>
+                <span>Subtotal</span>
+                <span><?php echo '$'.$_SESSION['subtotal'];
+                 ?></span>
+            </p>
+            <p>
+                <span>Tax (8.5%)</span>
+                <span><?php 
+                $tax = round(($_SESSION['subtotal'] * 0.085), 2);
+                echo '$'.$tax;
+                ?></span>
+            </p>
+            <p>
+               <span>Total</span>
+               <span>
+                  <?php
+                     $total = round(($tax + $_SESSION['subtotal']), 2);
+                     echo '$'.$total;
+                  ?>   
+               </span>
+           </p>
+            <a href="paymentinfo.php">Proceed to Checkout</a>
+    </div>
 </form>
 </div>
 <br><br><br><br><br><br>
