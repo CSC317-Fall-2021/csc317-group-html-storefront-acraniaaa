@@ -15,6 +15,8 @@
         $check_username = mysqli_query($conn, "SELECT username FROM userInfo where username = '$USERNAME' ");
         $check_email = mysqli_query($conn, "SELECT email FROM userInfo where email = '$EMAIL' ");
 
+        $sql= "SELECT username FROM userInfo where username = '$USERNAME'" 
+
               if((mysqli_num_rows($check_username) > 0) || (mysqli_num_rows($check_email) > 0)){
                 echo('Username or Email already exist');
                 echo mysqli_num_rows($check_username);
