@@ -47,6 +47,64 @@
 
          $_SESSION['subtotal'] = 0;
 
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove1'])){       
+            $_SESSION[Item1] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove2'])){       
+            $_SESSION[Item2] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove3'])){       
+            $_SESSION[Item3] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove4'])){       
+            $_SESSION[Item4] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove5'])){       
+            $_SESSION[Item5] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove6'])){       
+            $_SESSION[Item6] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove7'])){       
+            $_SESSION[Item7] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove8'])){       
+            $_SESSION[Item8] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove9'])){       
+            $_SESSION[Item9] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove10'])){       
+            $_SESSION[Item10] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove11'])){       
+            $_SESSION[Item11] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove12'])){       
+            $_SESSION[Item12] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove13'])){       
+            $_SESSION[Item13] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove14'])){       
+            $_SESSION[Item14] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove15'])){       
+            $_SESSION[Item15] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove16'])){       
+            $_SESSION[Item16] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove17'])){       
+            $_SESSION[Item17] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove18'])){       
+            $_SESSION[Item18] = 0;
+         }
+         if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove19'])){       
+            $_SESSION[Item19] = 0;
+         }
+         
          if($_SESSION['Item1'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(1)";
@@ -65,7 +123,11 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove1' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
+
                   </p>
                </div>
             </div>";
@@ -89,7 +151,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove2' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -113,7 +177,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove3' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -137,7 +203,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove4' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -161,7 +229,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove5' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -185,7 +255,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove6' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -209,13 +281,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove7' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 8){
+         if($_SESSION['Item8'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(8)";
             $result = $conn->query($sql);
@@ -233,7 +307,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove8' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -257,7 +333,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove9' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -281,7 +359,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove10' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
@@ -305,13 +385,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove11' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 12){
+         if($_SESSION['Item12'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(12)";
             $result = $conn->query($sql);
@@ -329,13 +411,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove12' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 13){
+         if($_SESSION['Item13'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(13)";
             $result = $conn->query($sql);
@@ -353,13 +437,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove13' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 14){
+         if($_SESSION['Item14'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(14)";
             $result = $conn->query($sql);
@@ -377,13 +463,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove14' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 15){
+         if($_SESSION['Item15'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(15)";
             $result = $conn->query($sql);
@@ -401,13 +489,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove15' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 16){
+         if($_SESSION['Item16'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(16)";
             $result = $conn->query($sql);
@@ -425,13 +515,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove16' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 17){
+         if($_SESSION['Item17'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(17)";
             $result = $conn->query($sql);
@@ -449,13 +541,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove17' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 18){
+         if($_SESSION['Item18'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(18)";
             $result = $conn->query($sql);
@@ -473,13 +567,15 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove18' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item1'] == 19){
+         if($_SESSION['Item19'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(19)";
             $result = $conn->query($sql);
@@ -497,7 +593,9 @@
                   <h4 class='product-offer'></h4>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <span class='remove'>Remove</span>
+                     <form action='cart.php' method='post'>
+                     <input type 'submit' class='remove' name='remove19' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
