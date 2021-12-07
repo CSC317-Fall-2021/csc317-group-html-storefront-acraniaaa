@@ -122,8 +122,7 @@
                   ?>   
                </span>
            </p>
-           <form action='home.php' method='post'>
-                     <input type='submit' value='PROCEED TO CHECKOUT'>
+            <a href="home.php">Proceed to Checkout</a>
     </div>
 </form>
 </div>
