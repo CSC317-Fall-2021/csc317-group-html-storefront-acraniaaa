@@ -49,7 +49,347 @@
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name="">
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["2"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["3"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["4"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["5"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["6"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["7"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["8"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["9"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["10"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["11"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["12"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["13"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["14"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["15"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["16"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["17"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
+                  <p class='product-remove'>
+                     <i class='fa fa-trash' aria-hidden='true'></i>
+                     <span class='remove'>Remove</span>
+                  </p>
+               </div>
+            </div>";
+         }
+         if(isset($_COOKIE["18"])){
+
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $result = $conn->query($sql);
+            $row = $result -> fetch_assoc();
+
+         echo  "<div class='product'>
+               <img src= '".$row['image_path']."'>
+               <div class='product-info'>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
+                  <h4 class='product-offer'></h4>
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name=''>
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
