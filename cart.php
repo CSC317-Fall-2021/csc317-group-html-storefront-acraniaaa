@@ -518,7 +518,7 @@
             <p>
                 <span>Tax (8.5%)</span>
                 <span><?php 
-                $tax = ($_SESSION['subtotal'] * 0.085);
+                $tax = round(($_SESSION['subtotal'] * 0.085), 2);
                 echo '$'.$tax;
                 ?></span>
             </p>
@@ -526,7 +526,7 @@
                <span>Total</span>
                <span>
                   <?php
-                     $total =  ($tax + $_SESSION['subtotal']);
+                     $total = round(($tax + $_SESSION['subtotal']), 2);
                      echo '$'.$total;
                   ?>   
                </span>
