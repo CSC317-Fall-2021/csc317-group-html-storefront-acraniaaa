@@ -10,7 +10,7 @@
         $USERNAME = $_GET['user'];
         $PASSWORD = $_GET['Password'];
 
-        $CONFPASSWORD = $_GET = ['ConfPassword'];
+        $CONFPASSWORD = $_GET['ConfPassword'];
 
         $check_username = mysqli_query($conn, "SELECT username FROM userInfo where username = '$USERNAME' ");
         $check_email = mysqli_query($conn, "SELECT email FROM userInfo where email = '$EMAIL' ");
@@ -19,7 +19,7 @@
                 echo('Username or Email already exist');
                 echo mysqli_num_rows($check_username);
 
-              } else if (strval($PASSWORD) == strval($PASSWORD)) {
+              } else if (strcmp(strval($PASSWORD) == strval($CONFPASSWORD)) == 0) {
                 echo('Passwords match');
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)
