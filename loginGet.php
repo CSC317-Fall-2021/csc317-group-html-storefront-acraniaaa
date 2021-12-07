@@ -5,17 +5,17 @@
         $USERNAME = $_GET['username'];
         $PASSWORD = $_GET['password'];
 
-        $check_username = mysqli_query($conn, "SELECT username FROM loginInfo where username = '$USERNAME' ");
-        $check_password = mysqli_query($conn, "SELECT pass_word FROM loginInfo where username = '$USERNAME' ");
-        $sql= "SELECT username FROM userInfo where username = '$USERNAME'" ;
+            $sql =  "SELECT username FROM loginInfo where username = '$USERNAME' ";
+            $RESULT = $conn -> query($sql);
+            $row1 = $RESULT -> fetch_assoc();
 
-            if(mysqli_num_rows($check_username) > 0) {
+            if($RESULT->num_rows > 0) {
 
                 $sql = "SELECT pass_word FROM loginInfo where username = '$USERNAME' ";
                 $inpPass = $conn -> query($sql);
                 $row = $inpPass -> fetch_assoc();
 
-                    if(strcmp(strval($PASSWORD) == $row['pass_word'])) {
+                    if(strcmp(strval($PASSWORD), strval($row['pass_word']))) {
 
                         echo "successfully logged in";
                         header("Location: home.php");
