@@ -44,12 +44,12 @@
             $row = $result -> fetch_assoc();
 
          echo  "<div class='product'>
-               <img src= '".row['image_path']."'>
+               <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".row['color']."</h3>
-                  <h4 class='product-price'>$".row['product_price']."</h4>
+                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h4 class='product-price'>$".$row['product_price']."</h4>
                   <h4 class='product-offer'></h4>
-                  <p class='product-quantity'>Qnt:<input value=".row['product_quantity']." name="">
+                  <p class='product-quantity'>Qnt:<input value=".$row['product_quantity']." name="">
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <span class='remove'>Remove</span>
