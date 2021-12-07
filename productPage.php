@@ -1,6 +1,16 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <title>Copy Paper: 8.5x11 White | DUNDER MIFFLIN</title>
+  <title><?php
+  session_start();
+  $conn= new mysqli("localhost", "user", "password", "main");
+  $id = $_SESSION['product_id'];
+  $sql = "SELECT product_type, product_size, color FROM products WHERE id=$id";
+  $result = $conn->query($sql);
+  $row = $result -> fetch_assoc();
+  echo "".$row['product_type']." Paper: ".$row['product_size']." ".$row['color']." | DUNDER MIFFLIN";
+  ?>
+  </title>
   <head>
     <link href = "StyleSheet.css" rel = "stylesheet">
     <link href = "paperStyle.css" rel = "stylesheet">
@@ -37,9 +47,6 @@
       <div class = "grid-container">
         <div id = "product-image">
           <?php
-            session_start();
-            $conn = new mysqli("localhost", "user", "password", "main");
-            $id = $_SESSION['product_id'];
             $sql = "SELECT image_path FROM products WHERE id=$id";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
