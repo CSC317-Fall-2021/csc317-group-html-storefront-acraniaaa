@@ -5,6 +5,9 @@
         $USERNAME = $_GET['username'];
         $PASSWORD = $_GET['password'];
 
+        session_start();
+        $_SESSION['loginStatus'] = 0;
+
             $sql =  "SELECT username FROM loginInfo where username = '$USERNAME' ";
             $RESULT = $conn -> query($sql);
             $row1 = $RESULT -> fetch_assoc();
@@ -19,6 +22,7 @@
 
                         echo "successfully logged in";
                         header("Location: home.php");
+                        $_SESSION['loginStatus'] = 1;
 
                     }
 
