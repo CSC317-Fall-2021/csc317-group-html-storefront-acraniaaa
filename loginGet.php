@@ -11,22 +11,18 @@
 
             if($RESULT->num_rows > 0) {
 
-                $sql = "SELECT pass_word FROM loginInfo where username = '$USERNAME' ";
+                $sql = "SELECT username,pass_word FROM loginInfo where username = '$USERNAME' ";
                 $inpPass = $conn -> query($sql);
                 $row = $inpPass -> fetch_assoc();
 
-                    if(strcmp(strval($PASSWORD), strval($row['pass_word']))) {
+                    if(strcmp(strval($PASSWORD), strval($row['pass_word'])) == 0) {
 
                         echo "successfully logged in";
                         header("Location: home.php");
 
                     }
 
-                    echo $USERNAME;
-                    echo $PASSWORD;
-                    echo $row['username'];
-                    echo $row['pass_word'];
-
             } 
+
     $conn->close();
 ?>
