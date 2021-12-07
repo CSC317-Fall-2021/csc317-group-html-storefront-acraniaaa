@@ -42,7 +42,7 @@
 
 <center>
 <br>
-<h1 style = "font-size: 80px;">Featured Products</h1>
+<h1 style = "font-size: 55px;">Featured Products</h1>
 <br><br>
 <div class="slider5">
       <div class="carousel5">
@@ -101,7 +101,7 @@
 <br><br>
 <img width = "50%" id="img" src="Images/ad_sabre.png"/>
 <br><br><br><br><br>
-<h1 style = "font-size: 80px;">Popular Products</h1>
+<h1 style = "font-size: 45px;">Popular Products</h1>
 <br><br>
 
 <div class="slider">
