@@ -37,7 +37,7 @@
 
 
 
-         if(isset($_COOKIE["1"])){
+         if(isset($_COOKIE[1])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -57,7 +57,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["2"])){
+         if(isset($_COOKIE[2])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -77,7 +77,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["3"])){
+         if(isset($_COOKIE[3])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -97,7 +97,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["4"])){
+         if(isset($_COOKIE[4])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -117,7 +117,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["5"])){
+         if(isset($_COOKIE[5])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -137,7 +137,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["6"])){
+         if(isset($_COOKIE[6])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -157,7 +157,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["7"])){
+         if(isset($_COOKIE[7])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -177,7 +177,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["8"])){
+         if(isset($_COOKIE[8])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -197,7 +197,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["9"])){
+         if(isset($_COOKIE[9])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -217,7 +217,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["10"])){
+         if(isset($_COOKIE[10])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -237,7 +237,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["11"])){
+         if(isset($_COOKIE[11])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -257,7 +257,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["12"])){
+         if(isset($_COOKIE[12])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -277,7 +277,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["13"])){
+         if(isset($_COOKIE[13])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -297,7 +297,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["14"])){
+         if(isset($_COOKIE[14])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -317,7 +317,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["15"])){
+         if(isset($_COOKIE[15])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -337,7 +337,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["16"])){
+         if(isset($_COOKIE[16])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -357,7 +357,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["17"])){
+         if(isset($_COOKIE[17])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
@@ -377,7 +377,7 @@
                </div>
             </div>";
          }
-         if(isset($_COOKIE["18"])){
+         if(isset($_COOKIE[18])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
             $result = $conn->query($sql);
