@@ -37,8 +37,8 @@
 
 .img {
   position: relative;
-  right: 10px;
-
+  right: 8px;
+  bottom: 100px;
 }
 
 .leftNav{
@@ -77,6 +77,3 @@
 	background: #1F618D;
 	height: 75px;
 }
-
-
-
