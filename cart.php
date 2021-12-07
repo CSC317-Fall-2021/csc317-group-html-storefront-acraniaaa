@@ -512,14 +512,14 @@
         <div class="cart-total">
             <p>
                 <span>Subtotal</span>
-                <span><?php echo '$' + strvar($_SESSION['subtotal']);
+                <span><?php echo '$'.$_SESSION['subtotal'];
                  ?></span>
             </p>
             <p>
                 <span>Tax (8.5%)</span>
                 <span><?php 
                 $tax = ($_SESSION['subtotal'] * 0.085);
-                echo '$' + strvar($tax);
+                echo '$'.$tax;
                 ?></span>
             </p>
             <p>
@@ -527,7 +527,7 @@
                <span>
                   <?php
                      $total =  ($tax + $_SESSION['subtotal']);
-                     echo '$' + strvar($total);
+                     echo '$'.$total;
                   ?>   
                </span>
            </p>
