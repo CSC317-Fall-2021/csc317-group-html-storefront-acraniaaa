@@ -129,8 +129,7 @@
             </div>";
          }
 
-         if($_SESSION['Item1'] == 1){
-
+         if($_SESSION['Item2'] == 1){
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(2)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -144,19 +143,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove3' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove2' value='Remove'>
                   </p>
                </div>
             </div>";
          }
 
          if($_SESSION['Item3'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(3)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -170,19 +166,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove3' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove3' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item4'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(4)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -196,19 +189,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove4' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove4' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item5'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(5)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -222,19 +212,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove5' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove5' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item6'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(6)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -248,19 +235,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove6' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove6' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item7'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(7)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -274,19 +258,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove7' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove7' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item8'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(8)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -300,19 +281,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove8' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove8' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item9'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(9)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -326,19 +304,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove9' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove9' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item10'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(10)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -352,19 +327,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove10' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove10' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item11'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(11)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -378,19 +350,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove11' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove11' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item12'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(12)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -404,19 +373,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove12' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove12' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item13'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(13)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -430,19 +396,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove13' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove13' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item14'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(14)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -456,19 +419,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove14' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove14' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item15'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(15)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -482,19 +442,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove15' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove15' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item16'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(16)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -508,19 +465,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove16' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove16' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item17'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(17)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -534,19 +488,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove17' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove17' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item18'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(18)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -560,19 +511,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove18' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove18' value='Remove'>
                   </p>
                </div>
             </div>";
          }
-
+         
          if($_SESSION['Item19'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(19)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -586,16 +534,15 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove19' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove19' value='Remove'>
                   </p>
                </div>
             </div>";
          }
+         
 
          
            ?>
