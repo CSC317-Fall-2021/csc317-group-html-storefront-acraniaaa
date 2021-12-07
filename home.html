@@ -6,10 +6,11 @@
 <link href = "StyleSheet.css" rel = "stylesheet">
 <link href = "CheckoutStyleSheet.css" rel = "stylesheet">
 <link href = "carousel.css" rel = "stylesheet">
+<link href = "carousel2.css" rel = "stylesheet">
 
 </head>
 
-<body class = "body" id = "navbar">
+<body onload = "startTimer()" class = "body" id = "navbar">
 <div class = "nav">
 	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
 	<a class = "leftNav" href="home.html"> HOME</a>
@@ -26,45 +27,83 @@
 </div>
 
 <img class = "img" src="Images/Header_Image.png" width="101%">
-<center>
-   <table>
-	<tr>
-          <td>
-		<img src = "Images/PaperCASE.png" width=500px>
-	  </td>
-	<td style="padding-left: 50px">
-	<br><div style = "font-size: 20px;">Only</div>
-	<br><div style = "font-size: 80px; font-weight: bold;">
-	$39.99</div>
-	<br><div style = "font-size: 40px;">8.5" x 11" 20lb
-	CLEAR paper</div>
-	  </td>
-	</tr>
-   </table>
 
-<h2>FEATURED PRODUCTS</h2>
-<br><br><br>
+<center>
+<br><br><br><br><br>
+<div style = "font-size: 60px;">Featured Products</div>
+<br><br><br><br><br><br><br>
+<div class="slider5">
+      <div class="carousel5">
+        <input checked="checked" class="sections5" id="section1" name="carousel5" type="radio">
+        <input class='sections5' id='section2' name='carousel5' type='radio'>
+        <input class='sections5' id='section3' name='carousel5' type='radio'>
+        <div class='controls5'>
+          <label class='controlLooks5' for='section2'>
+            ]
+          </label>
+        </div>
+        <div class='controls5'>
+          <label class='controlLooks5' for='section1'>
+            [
+          </label>
+          <label class='controlLooks5' for='section3'>
+            ]
+          </label>
+        </div>
+        <div class='controls5'>
+          <label class='controlLooks5' for='section2'>
+            [
+          </label>
+        </div>
+        <div class='visible5'>
+          <div class='transition5'>
+            <div class= "item5 item1">
+              <div class= "slider5">
+                <img src = "Images/PaperCASE.png" width = "450" height = "450">
+		<div class="text5">Copy Paper</div>
+              </div>
+            </div>
+            <div class= "item5 item1">
+              <div class= "slider5">
+                <img src = "Images/paperRed.png" width = "450" height = "450">
+		<div class="text6">Sample Text</div>
+              </div>
+            </div>
+            <div class= "item5 item1">
+              <div class="slider5">
+                <img src = "Images/paperYellow.png" width = "450" height = "450">
+		<div class="text7">Sample Text</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<br><br><br><br><br><br><br>
+<h1>Popular Products</h1>
+<br><br><br><br><br><br><br>
 
 <div class="slider">
       <div class='carousel'>
-        <input checked='checked' class='sections' id='section1' name='carousel' type='radio'>
-        <input class='sections' id='section2' name='carousel' type='radio'>
-        <input class='sections' id='section3' name='carousel' type='radio'>
+        <input checked='checked' class='sections' id='section4' name='carousel' type='radio'>
+        <input class='sections' id='section5' name='carousel' type='radio'>
+        <input class='sections' id='section6' name='carousel' type='radio'>
         <div class='controls'>
-          <label class='controlLooks' for='section2'>
+          <label class='controlLooks' for='section5'>
             ]
           </label>
         </div>
         <div class='controls'>
-          <label class='controlLooks' for='section1'>
+          <label class='controlLooks' for='section4'>
             [
           </label>
-          <label class='controlLooks' for='section3'>
+          <label class='controlLooks' for='section6'>
             ]
           </label>
         </div>
         <div class='controls'>
-          <label class='controlLooks' for='section2'>
+          <label class='controlLooks' for='section5'>
             [
           </label>
         </div>
@@ -111,12 +150,17 @@
 </div>
 
 <br><br><br><br><br>
+
+<img id="img" src="Images/ad_sabre.png"/>
+
+<br><br><br><br><br>
 <script src = "EJS.js"></script>
+<script src = "Ads.js"></script>
 </center>
 </body>
 
 
-<br></br>
+<br>
 
 
 <footer class="footer">
