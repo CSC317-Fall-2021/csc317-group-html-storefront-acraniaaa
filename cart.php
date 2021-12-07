@@ -48,61 +48,61 @@
          $_SESSION['subtotal'] = 0;
 
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove1'])){       
-            $_SESSION[Item1] = 0;
+            $_SESSION['Item1'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove2'])){       
-            $_SESSION[Item2] = 0;
+            $_SESSION['Item2'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove3'])){       
-            $_SESSION[Item3] = 0;
+            $_SESSION['Item3'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove4'])){       
-            $_SESSION[Item4] = 0;
+            $_SESSION['Item4'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove5'])){       
-            $_SESSION[Item5] = 0;
+            $_SESSION['Item5'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove6'])){       
-            $_SESSION[Item6] = 0;
+            $_SESSION['Item6'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove7'])){       
-            $_SESSION[Item7] = 0;
+            $_SESSION['Item7'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove8'])){       
-            $_SESSION[Item8] = 0;
+            $_SESSION['Item8'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove9'])){       
-            $_SESSION[Item9] = 0;
+            $_SESSION['Item9'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove10'])){       
-            $_SESSION[Item10] = 0;
+            $_SESSION['Item10'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove11'])){       
-            $_SESSION[Item11] = 0;
+            $_SESSION['Item11'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove12'])){       
-            $_SESSION[Item12] = 0;
+            $_SESSION['Item12'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove13'])){       
-            $_SESSION[Item13] = 0;
+            $_SESSION['Item13'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove14'])){       
-            $_SESSION[Item14] = 0;
+            $_SESSION['Item14'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove15'])){       
-            $_SESSION[Item15] = 0;
+            $_SESSION['Item15'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove16'])){       
-            $_SESSION[Item16] = 0;
+            $_SESSION['Item16'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove17'])){       
-            $_SESSION[Item17] = 0;
+            $_SESSION['Item17'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove18'])){       
-            $_SESSION[Item18] = 0;
+            $_SESSION['Item18'] = 0;
          }
          if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['remove19'])){       
-            $_SESSION[Item19] = 0;
+            $_SESSION['Item19'] = 0;
          }
          
          if($_SESSION['Item1'] == 1){
