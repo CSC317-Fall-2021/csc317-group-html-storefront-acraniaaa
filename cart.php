@@ -38,7 +38,7 @@
 
 
 <div class="container">
-   <br><br><br> <br><br><br> <br><br><br>
+   <br><br><br> <br><br><br><br>
     <h1>Shopping Cart</h1>
     <div class="cart">
         <div class="products">
