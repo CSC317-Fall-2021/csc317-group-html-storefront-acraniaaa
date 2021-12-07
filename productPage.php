@@ -154,26 +154,8 @@
                 $_SESSION['Item18'] = 1;
               }
 
-
-              echo $_SESSION['Item1'];
-              echo $_SESSION['Item2'];
-              echo $_SESSION['Item3'];
-              echo $_SESSION['Item4'];
-              echo $_SESSION['Item5'];
-              echo $_SESSION['Item6'];
-              echo $_SESSION['Item7'];
-              echo $_SESSION['Item8'];
-              echo $_SESSION['Item9'];
-              echo $_SESSION['Item10'];
-              echo $_SESSION['Item11'];
-              echo $_SESSION['Item12'];
-              echo $_SESSION['Item13'];
-              echo $_SESSION['Item14'];
-              echo $_SESSION['Item15'];
-              echo $_SESSION['Item16'];
-              echo $_SESSION['Item17'];
-              echo $_SESSION['Item18'];
             }
+            
         ?>
         </div>
         <div id="similar-products-title">

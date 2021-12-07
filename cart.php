@@ -44,9 +44,9 @@
 
 
         <?php
-         if(isset($_COOKIE[1])){
+         if($_SESSION['Item1'] == 1){
 
-            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";
+            $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(1)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
 
