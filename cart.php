@@ -38,6 +38,7 @@
 
 
 <div class="container">
+   <br><br><br> <br><br><br> <br><br><br>
     <h1>Shopping Cart</h1>
     <div class="cart">
         <div class="products">
@@ -106,7 +107,6 @@
          }
          
          if($_SESSION['Item1'] == 1){
-
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(1)";
             $result = $conn->query($sql);
             $row = $result -> fetch_assoc();
@@ -120,20 +120,16 @@
                <div class='product-info'>
                   <h3 class='product-name'>".$row['color']."</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
-                  <h4 class='product-offer'></h4>
-                  <p class='product-remove'>
+                  <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
-
-                     <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove1' value='REMOVE'>
-                     <form action='productPage.php' method='post'>
-
+                     <form action='cart.php' class='remove' method='post'>
+                     <input type='submit' class='product-remove' name='remove1' value='Remove'>
                   </p>
                </div>
             </div>";
          }
 
-         if($_SESSION['Item2'] == 1){
+         if($_SESSION['Item1'] == 1){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=(2)";
             $result = $conn->query($sql);
@@ -152,8 +148,8 @@
                   <p class='product-remove'>
                      <i class='fa fa-trash' aria-hidden='true'></i>
                      <form action='cart.php' method='post'>
-                     <input type 'submit' class='remove' name='remove2' value='REMOVE'>
-                     <form>
+                     <input type 'submit' class='remove' name='remove3' value='REMOVE'>
+                     <form action='productPage.php' method='post'>
                   </p>
                </div>
             </div>";
