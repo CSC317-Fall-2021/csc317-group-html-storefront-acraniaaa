@@ -85,25 +85,7 @@
 
           <?php
           
-          $_SESSION['Item1'] = 0;   
-          $_SESSION['Item2'] = 0;
-          $_SESSION['Item3'] = 0;
-          $_SESSION['Item4'] = 0;
-          $_SESSION['Item5'] = 0;
-          $_SESSION['Item6'] = 0;
-          $_SESSION['Item7'] = 0;
-          $_SESSION['Item8'] = 0;
-          $_SESSION['Item9'] = 0;
-          $_SESSION['Item10'] = 0;
-          $_SESSION['Item11'] = 0;
-          $_SESSION['Item12'] = 0;
-          $_SESSION['Item13'] = 0;
-          $_SESSION['Item14'] = 0;
-          $_SESSION['Item15'] = 0;
-          $_SESSION['Item16'] = 0;
-          $_SESSION['Item17'] = 0;
-          $_SESSION['Item18'] = 0;
-          $_SESSION['Item19'] = 0;
+
 
           ?>
           
