@@ -64,7 +64,7 @@
       </form>
   </div>
         <br>Already have an account?
-        <br><a href="Login.php">LOGIN</a>
+        <br><a href="login.php">LOGIN</a>
 
       </td>
 
