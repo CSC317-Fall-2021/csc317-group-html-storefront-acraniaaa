@@ -115,7 +115,7 @@
               func();
             }
             function func(){
-              $_SESSION['Item' + $_SESSION['product_id']] = 'IT WORKS!';  
+              $_SESSION['Item' + $_SESSION['product_id']] = 456543;  
               echo $_SESSION['Item1'];
               echo $_SESSION['Item2'];
               echo $_SESSION['Item3'];
