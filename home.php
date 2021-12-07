@@ -11,6 +11,7 @@
 </head>
 
 <body onload = "startTimer()" class = "body" id = "navbar">
+
 <div class = "nav">
 	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
 	<a class = "leftNav" href="home.html"> HOME</a>
@@ -32,10 +33,10 @@
 
   </a>
 
-
 	<a class = "rightNav" href = "cart.html"><img class = "rightImg" width = "30" 
 		height = "30" src = "Images/cart_icon.png"></a>
 </div>
+
 <br><br><br><br><br><br><br>
 <img class = "img" src="Images/Header_Image.png" width="101%">
 

@@ -8,19 +8,29 @@
   <!--Header links-->
   <body>
     
-    <div class = "nav">
+  <div class = "nav">
 	<img class = "leftNav" src="Images/Dunder_Mifflin_logo.png" width="140" height="80">
-	<a class = "leftNav" href="index.html"> HOME</a>
-	<a class = "leftNav" href="products.php"> PAPER</a>
+	<a class = "leftNav" href="home.html"> HOME</a>
+	<a class = "leftNav" href="products.html"> PAPER</a>
 	<a class = "leftNav" href="about.html"> ABOUT</a>
 	<a class = "leftNav" href="FAQ.html"> FAQ</a>
-	<a class = "rightNav" href = "login.html">LOG IN</a>
+
+
+	<a class = "rightNav" href = "login.html">
+    
+  <?php
+  session_start();
+  if ($_SESSION['loginStatus'] == 0 || $_SESSION['loginStatus'] == NULL){
+    echo 'LOG IN';
+  } else {
+    echo 'LOG OUT';
+  }
+  ?>
+
+  </a>
+
 	<a class = "rightNav" href = "cart.html"><img class = "rightImg" width = "30" 
 		height = "30" src = "Images/cart_icon.png"></a>
-	<form class = "rightNav"><input type = "search" placeholder = "Search" 
-		style="width: 300px; padding: 9px 20px; margin: 18px 10px; 
-		display:inline-block; border: 1px solid#ccc; box-sizing: 
-		border-box;"></form>
 </div>
     
     <font face = "Times New Roman">
