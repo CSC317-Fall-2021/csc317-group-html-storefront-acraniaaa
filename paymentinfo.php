@@ -35,7 +35,7 @@
 		height = "30" src = "Images/cart_icon.png"></a>
 </div>
 
-
+<br><br><br><br><br><br><br><br><br>
 
 <div class="container">
   <h1>Checkout</h1>
@@ -122,7 +122,8 @@
                   ?>   
                </span>
            </p>
-            <a href="paymentinfo.php">Proceed to Checkout</a>
+           <form action='home.php' method='post'>
+                     <input type='submit' value='PROCEED TO CHECKOUT'>
     </div>
 </form>
 </div>
