@@ -7,7 +7,8 @@
 
         $check_username = mysqli_query($conn, "SELECT username FROM loginInfo where username = '$USERNAME' ");
         $check_password = mysqli_query($conn, "SELECT pass_word FROM loginInfo where username = '$USERNAME' ");
-        
+        $sql= "SELECT username FROM userInfo where username = '$USERNAME'" ;
+
             if(mysqli_num_rows($check_username) > 0) {
 
                 $sql = "SELECT pass_word FROM loginInfo where username = '$USERNAME' ";
@@ -20,6 +21,12 @@
                         header("Location: home.php");
 
                     }
+
+                    echo $USERNAME;
+                    echo $PASSWORD;
+                    echo $row['username'];
+                    echo $row['pass_word'];
+
             } 
     $conn->close();
 ?>
