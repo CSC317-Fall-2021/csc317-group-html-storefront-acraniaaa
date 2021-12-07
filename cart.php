@@ -34,9 +34,6 @@
 
 
         <?php
-
-
-
          if(isset($_COOKIE[1])){
 
             $sql="SELECT color, product_type, product_size, product_price, product_quantity, image_path FROM products WHERE id=($_COOKIE[1])";

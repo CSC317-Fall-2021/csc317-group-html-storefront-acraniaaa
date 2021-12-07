@@ -19,7 +19,7 @@
                 echo('Username or Email already exist');
                 echo mysqli_num_rows($check_username);
 
-              } else if ($PASSWORD == $PASSWORD) {
+              } else if (strval($PASSWORD) == strval($PASSWORD)) {
                 echo('Passwords match');
 
         $sql = "INSERT INTO userInfo (first_name, last_name, username, email, pass_word)

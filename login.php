@@ -7,14 +7,8 @@
         $USERNAME = $_GET['username'];
         $PASSWORD = $_GET['password'];
 
-        $sql = "INSERT INTO loginInfo (username, pass_word)
-                VALUES ('$USERNAME', '$PASSWORD');";
+        $check_username = mysqli_query($conn, "SELECT username FROM userInfo where username = '$USERNAME' ");
 
-                if ($conn->query($sql) === TRUE) {
-                    echo "Info received";
-                  } else {
-                    echo "Error creating database: " . $conn->error;
-                  }
     
     $conn->close();
 ?>
