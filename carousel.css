@@ -200,6 +200,60 @@ html {
   justify-content: center;
   border-radius: 3px;
   font-size: 30px;
-  height: 250px;
+  height: 375px;
   width: 100%;
+}
+
+.name1{
+  position: absolute;
+  right: 885px;
+  top: 300px;
+}
+
+.name2{
+  position: absolute;
+  right: 475px;
+  top: 300px;
+}
+
+.name3{
+  position: absolute;
+  right: 110px;
+  top: 300px;
+}
+
+.name4{
+  position: absolute;
+  right: -265px;
+  top: 300px;
+}
+
+.name5{
+  position: absolute;
+  right: -670px;
+  top: 300px;
+}
+
+.name6{
+  position: absolute;
+  right: -1075px;
+  top: 300px;
+}
+
+.name7{
+  position: absolute;
+  right: -1450px;
+  top: 300px;
+}
+
+.name8{
+  position: absolute;
+  right: -1830px;
+  top: 300px;
+}
+
+.name9{
+  position: absolute;
+  right: -2265px;
+  top: 300px;
 }
