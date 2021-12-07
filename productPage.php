@@ -116,9 +116,45 @@
             }
             function func(){
 
-              $a = 'Item' + $_SESSION['product_id'];
+              if($_SESSION['product_id'] == 1){
+                $_SESSION['Item1'] = 1;
+              } else if($_SESSION['product_id'] == 2){
+                $_SESSION['Item2'] = 1;
+              } else if($_SESSION['product_id'] == 3){
+                $_SESSION['Item3'] = 1;
+              } else if($_SESSION['product_id'] == 4){
+                $_SESSION['Item4'] = 1;
+              } else if($_SESSION['product_id'] == 5){
+                $_SESSION['Item5'] = 1;
+              } else if($_SESSION['product_id'] == 6){
+                $_SESSION['Item6'] = 1;
+              } else if($_SESSION['product_id'] == 7){
+                $_SESSION['Item7'] = 1;
+              } else if($_SESSION['product_id'] == 8){
+                $_SESSION['Item8'] = 1;
+              } else if($_SESSION['product_id'] == 9){
+                $_SESSION['Item9'] = 1;
+              } else if($_SESSION['product_id'] == 10){
+                $_SESSION['Item10'] = 1;
+              } else if($_SESSION['product_id'] == 11){
+                $_SESSION['Item11'] = 1;
+              } else if($_SESSION['product_id'] == 12){
+                $_SESSION['Item12'] = 1;
+              } else if($_SESSION['product_id'] == 13){
+                $_SESSION['Item13'] = 1;
+              } else if($_SESSION['product_id'] == 14){
+                $_SESSION['Item14'] = 1;
+              } else if($_SESSION['product_id'] == 15){
+                $_SESSION['Item15'] = 1;
+              } else if($_SESSION['product_id'] == 16){
+                $_SESSION['Item16'] = 1;
+              } else if($_SESSION['product_id'] == 17){
+                $_SESSION['Item17'] = 1;
+              } else if($_SESSION['product_id'] == 18){
+                $_SESSION['Item18'] = 1;
+              }
 
-              $_SESSION[$a] = 456543;  
+
               echo $_SESSION['Item1'];
               echo $_SESSION['Item2'];
               echo $_SESSION['Item3'];
