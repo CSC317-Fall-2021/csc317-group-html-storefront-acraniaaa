@@ -122,7 +122,7 @@
                   ?>   
                </span>
            </p>
-            <a href="home.php">Proceed to Checkout</a>
+            <a href="orderConfirmed.php">Proceed to Checkout</a>
     </div>
 </form>
 </div>

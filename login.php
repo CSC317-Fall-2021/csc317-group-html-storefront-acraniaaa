@@ -44,7 +44,8 @@ $_SESSION['loginStatus'] = 0;
 <p>
 
   <font face = "Arial"><body><center>
-    <br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+<br><br><br>
     <table cellspacing="0" cellpadding="0" style="text-align:center;background-color:white;border-color:black;border-style:solid;border-width:1;box-shadow: 5px 10px;">
     <tr>
       <td width="300px" height="400px" >
@@ -74,7 +75,9 @@ $_SESSION['loginStatus'] = 0;
 
 
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 
 
 

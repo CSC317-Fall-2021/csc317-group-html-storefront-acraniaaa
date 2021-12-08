@@ -169,7 +169,7 @@
 		height = "30" src = "Images/cart_icon.png"></a>
 </div>
     <main>
-      <font face = "Times New Roman"><br><br><br><br><br><br><br><br><br>
+      <font face = "Arial"><br><br><br><br><br><br><br><br><br>
         <center><img src="Images/Dunder_Mifflin_logo_Black.png" width=200px></center><br><br>
 
         <h1 id = "products-title"></h1>

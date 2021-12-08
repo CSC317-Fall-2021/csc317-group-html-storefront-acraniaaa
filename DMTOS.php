@@ -34,7 +34,8 @@
 		height = "30" src = "Images/cart_icon.png"></a>
 </div>
 
-	
+<br><br><br><br>
+<br><br><br>
 	<center>
 	  <br><br><br>
 	<img src="Images/Dunder_Mifflin_logo_Black.png" width=200px>

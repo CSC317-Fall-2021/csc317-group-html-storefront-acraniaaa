@@ -38,7 +38,7 @@
 </div>
 
 <br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
+<br><br><br>
 <img class = "img" src="Images/Header_Image.png" width="101%">
 
 <center>

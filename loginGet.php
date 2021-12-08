@@ -24,9 +24,15 @@
                         header("Location: home.php");
                         $_SESSION['loginStatus'] = 1;
 
-                    }
+                        header("Location: home.php");
 
-            } 
+                    } else {
+
+                    header("Location: login.php");}
+
+            } else {
+
             header("Location: login.php");
+            }
     $conn->close();
 ?>

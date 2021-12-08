@@ -38,7 +38,7 @@
 
 
 <div class="container">
-   <br><br><br> <br><br><br><br>
+   <br><br><br> <br><br><br> <br><br><br>
     <h1>Shopping Cart</h1>
     <div class="cart">
         <div class="products">
@@ -118,7 +118,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -141,7 +141,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -164,7 +164,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -187,7 +187,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -210,7 +210,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -233,7 +233,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -256,7 +256,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -279,7 +279,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -302,7 +302,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -325,7 +325,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -348,7 +348,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -371,7 +371,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -394,7 +394,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -417,7 +417,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -440,7 +440,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -463,7 +463,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -486,7 +486,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -509,7 +509,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>
@@ -532,7 +532,7 @@
          echo  "<div class='product'>
                <img src= '".$row['image_path']."'>
                <div class='product-info'>
-                  <h3 class='product-name'>".$row['color']."</h3>
+                  <h3 class='product-name'>".$row['color']." ".$row['product_type']." Paper</h3>
                   <h4 class='product-price'>$".$row['product_price']."</h4>
                   <p>
                      <i class='fa fa-trash' aria-hidden='true'></i>

@@ -21,6 +21,8 @@
                 echo('Username or Email already exist');
                 echo mysqli_num_rows($check_username);
 
+                header("Location: register.php");
+
               } else if (strcmp(strval($PASSWORD) == strval($CONFPASSWORD)) == 0) {
                 echo('Passwords match');
 
@@ -41,15 +43,15 @@
                   } else {
                     echo "Error creating database: " . $conn->error;
                   }
+
+                  header("Location: login.php");
+
                 }
 
              
              else {
                 echo('passwords do not match');
-             }
-      
-
-             header("Location: register.php");
+             header("Location: register.php");}
 
     $conn->close();
 ?>
